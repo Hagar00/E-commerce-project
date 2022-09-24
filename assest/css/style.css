@@ -2,6 +2,10 @@
 {
     box-sizing: border-box;
 }
+html
+{
+    scroll-behavior: smooth;
+}
 body
 {
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -10,7 +14,7 @@ body
     direction: ltr;
 }
 p
- {
+{
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -66,17 +70,68 @@ a
 }
 
 /******************** end style navbar ******************** */
-
-
-/*?????????????????? but your style here ?????????????????*/
-.home_sec
+.banner 
+{  
+    background-image: url(../images/4.png);
+    background-attachment: fixed;
+    height: 75vh;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.custom_home .logo_div a > img
 {
-    width: 100%;
-    height: 800px;
+    max-width: 162px;
+}
+.slider_two .details >div 
+{
+    text-align: center;
+}
+.slider_two .details >div a img
+{
+    max-width: 300px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/* **************** start about section *************** */
+.slider_one
+{
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.slider_one .container .first
+{
+    animation: in_down 4s  ease;
+    -webkit-animation: in_down 4s  ease;
+}
+.slider_one .container .first .content
+{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.slider_one .container .second 
+{
+    padding-top: 40px;
+    animation: in_right 4s  ease;
+    -webkit-animation: in_right 4s  ease;
+}
+.slider_one .container .second .icon .custom ,
+.slider_one .container .third .icon .custom,
+.slider_one .container .third .icon .custom
+{
+    font-size: 3.7rem;
+}
+.slider_one .container .third
+{
+    padding-top: 40px;
+    animation: in_right 4s  ease;
+    -webkit-animation: in_right 4s  ease;
 }
 
-
-
+/* ************************ end about section****************** */
 
 /* ******************* start style footer ****************** */
 .footer 
@@ -175,6 +230,122 @@ p
     margin-right: 13px;
 }
 /* ********************** end style footer **********************/
+/* ***********************contact us style ********************** */
+.inner-page {
+    box-shadow: 0 0 5px 0 rgb(171 169 171);
+    background: #fff;
+    padding: 0 20px 0 !important;
+    margin-bottom: 20px;
+    position: relative;
+    top: 67px;
+}
+.container
+{
+    margin-right: auto;
+    margin-left: auto;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+b {
+    color: #212121;
+    font-weight: normal !important;
+    font-family: 'open_sanssemibold';
+    font-size: 22px;
+}
+.bold {
+    font-family: 'open_sansbold' !important
+}
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.text-727272 {
+    color: #727272;
+}
+.custom-icons {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+.m-b-lg {
+    margin-bottom: 3rem !important
+}
+.btn-group-justified {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+}
+.btn-group-justified > .btn, .btn-group-justified > .btn-group {
+    float: none;
+    display: table-cell;
+    width: 1%;
+}
+.btn-group-justified > .btn-group .btn {
+    width: 100%;
+}
+.btn-group > .btn:first-child {
+    margin-left: 0
+}
+.btn-group-justified > .btn-group .btn:hover
+{
+    border-bottom: 2px solid #ff5a00;
+}
+.most-tab-group button.active, .most-tab-group button:hover {
+    border-bottom: 2px solid #ff5a00;
+}
+.btn-group > .btn, .btn-group-vertical > .btn {
+    position: relative;
+    float: left;
+}
+.most-tab-group button {
+    background: none;
+    padding: 5px;
+    border: none;
+}
+textarea:hover, input:hover, textarea:active, input:active, textarea:focus, input:focus, button:focus, button:active, button:hover {
+    outline: 0 !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+.b-radius-0 {
+    border-radius: 0;
+}
+.m-b-md {
+    margin-bottom: 1.5rem !important
+}
+.custom_right .custom_txt
+{
+    box-shadow: 0 0 5px 0 rgb(171 169 171);
+    padding: 10px;
+    background-color: rgba(229, 223, 223, 0.901);
+}
+.text-646464 {
+    color: #646464;
+    font-size: 17px;
+}
+.greentext
+{
+    color:#00A53C;
+}
+.green {
+    background-color: #00A53C;
+    color: #fff;
+}
+.contact_footer
+{
+    position: relative;
+    top: 75px;
+}
+/* *************** end contact style **************** */
 
+.custom_home .custom_category > div span img
+{
+    width: 230px;
+    height: 200px;
+}
 
 

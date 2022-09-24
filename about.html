@@ -51,47 +51,91 @@
       </div>
     </section>
     <!-- ##################end navbar ######################## -->
-    <section class="banner" id="banner">
-    </section>
-    <section class="multi-verticals ng-scope custom_home">
-      <div class="container container-extended text-center">
-        <h2 class="section-heading text-center mt-4" ng-switch=""
-          on="model.country.id"><!-- ngSwitchWhen: 8 --><!-- ngSwitchDefault: -->
-          <span ng-switch-default="" class="ng-scope text-center">Your everyday,
-            right away</span><!-- end ngSwitchWhen: -->
-        </h2>
-        <p class="section-description text-center h3 m-4">Order food and grocery
-          delivery online from hundreds of restaurants and shops nearby.</p>
-        <div class="flex mobile-vertical mt-5 logo_div text-center">
-          <a class="app-link"
-            href="https://apps.apple.com/us/app/talabat-%D8%B7%D9%84%D8%A8%D8%A7%D8%AA-food-ordering/id451001072?utm_campaign=other_campaigns_web_eat_ma_bh_display&amp;utm_source=Footer_download&amp;utm_medium=campaigns">
-            <img src="./assest/images/logo_appstore.svg" alt="appstore talabat"></a>
-          <a class="app-link"
-            href="https://play.google.com/store/apps/details?id=com.talabat&amp;referrer=adjust_reftag%3Dc2VDcRfodCSbL%26utm_source%3DCooperations%26utm_campaign%3Dother_campaigns_and_eat_ma_bh_display%26utm_content%3DFooter_download&amp;utm_campaign=other_campaigns_web_eat_ma_bh_display&amp;utm_medium=campaigns&amp;utm_source=Footer_download">
-            <img src="./assest/images/logo_playstore.svg" alt="playstore
-              talabat"></a>
-          <a class="app-link"
-            href="https://appgallery.huawei.com/#/app/C100450669">
-            <img src="./assest/images/logo_huaweistore1.svg" alt="Huawie talabat"></a>
+    <!-- ############## start home page ################# -->
+    <section class="home_sec">
+      <div class="slider_one" id="whate_we_do">
+        <div class="container" id="about">
+          <div class="row first">
+            <div class="content col-lg-12 col--xl-12 ">
+              <h2> About Us </h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+                tempore architecto
+                ab aspernatur explicabo provident totam adipisci pariatur
+                doloribus sint eaque voluptates
+                exercitationem officia doloremque error commodi ipsa unde
+                vitae.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Cum tempore architecto
+                ab aspernatur explicabo provident totam adipisci pariatur
+                doloribus sint eaque voluptates
+                exercitationem officia doloremque error commodi ipsa unde vitae
+              </p>
+            </div>
+          </div>
+          <div class="row second">
+            <div class="col-lg-1 icon">
+              <i class="far fa-3x fa-chart-bar text-center tm-icon custom"
+                style="color:#ff5a00"></i>
+            </div>
+            <div class="col-lg-5 top_text">
+              <div class="text">
+                <h2> restaurants </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ea laboriosam veritatis fugiat quasi repellendus nobis illo
+                  blanditiis illum
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-1 icon">
+              <i class="far fa-3x fa-comment-alt text-center tm-icon custom "
+                style="color:#ff5a00"></i>
+            </div>
+            <div class="col-lg-5 top_text">
+              <div class="text">
+                <h2>fast food </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ea laboriosam veritatis fugiat quasi repellendus nobis illo
+                  blanditiis illum
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row third">
+            <div class="col-lg-1 icon">
+              <i class="fa-solid fa-fingerprint custom" style="color: #ff5a00;"></i>
+            </div>
+            <div class="col-lg-5 top_text">
+              <div class="text">
+                <h2>top secure </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ea laboriosam veritatis fugiat quasi repellendus nobis illo
+                  blanditiis illum
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-1 icon">
+              <i class="fas fa-3x fa-users text-center tm-icon custom"
+                style="color:#ff5a00"></i>
+            </div>
+            <div class="col-lg-5 top_text">
+              <div class="text">
+                <h2>social media</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ea laboriosam veritatis fugiat quasi repellendus nobis illo
+                  blanditiis illum
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <div class="container slider_two mt-5">
-      <div class="row details">
-        <div class="left col-lg-6 col-md-1 col-sm-1">
-          <a href="#">
-            <img src="./assest/images/vertical-grocery.webp" alt="sorry not found">
-          </a>
-        </div>
-        <div class="right col-lg-6 col-md-1 col-sm-1 row">
-          <a href="#">
-            <img src="./assest/images/vertical-grocery.webp" alt="sorry not found">
-          </a>
-        </div>
-      </div>
-    </div>
-    <!--################## start footer ########################### -->
-    <footer class="footer purple-bg ng-scope mt-5" ng-controller="FooterController">
+    <!--##################### end ##################### -->
+    <footer class="footer purple-bg ng-scope" ng-controller="FooterController">
       <section class="footercontent container p-x-0">
         <div class="home-footer">
           <section class="popular-links hidden-xs">
@@ -156,7 +200,8 @@
         </section>
       </section>
     </footer>
-    <!-- ################end footer ###################### -->
+
+
     <script src="https://kit.fontawesome.com/8321aaa57d.js"
       crossorigin="anonymous"></script>
     <script
