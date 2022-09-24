@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>final project</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous">
     <link rel="stylesheet" href="./assest/css/all.min.css">
     <link rel="stylesheet" href="./assest/css/fontawesome.min.css">
     <link rel="stylesheet" href="./assest/css/normalize.css">
@@ -12,101 +16,160 @@
   </head>
   <body>
     <!-- ################## start navbar ########### -->
-      <section class="nav_sec fixed-top">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="./assest/images/logo.svg" alt="sorry not found"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item ml-4 custom_li">
-                    <a class="nav-link active" aria-current="page" href="#">All restaurants</a>
-                  </li>
-                  <li class="nav-item ml-4 custom_li">
-                    <a class="nav-link" href="#">about us</a>
-                  </li>
-                  <li class="nav-item ml-4 custom_li">
-                    <a class="nav-link" href="#">contact us </a>
-                  </li>
-                  <li class="nav-item ml-4 custom_li login ">
-                    <a class="nav-link" href="#"> Log in </a>
-                  </li>
-                </ul>
+    <section class="nav_sec fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img
+                src="./assest/images/logo.svg" alt="sorry not found"></a>
+            <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle
+              navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end"
+              id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item ml-4 custom_li">
+                  <a class="nav-link active" aria-current="page" href="#">All
+                    restaurants</a>
+                </li>
+                <li class="nav-item ml-4 custom_li">
+                  <a class="nav-link" href="./about.html">about us</a>
+                </li>
+                <li class="nav-item ml-4 custom_li">
+                  <a class="nav-link" href="./contact.html">contact us </a>
+                </li>
+                <li class="nav-item ml-4 custom_li login ">
+                  <a class="nav-link" href="#"> Log in </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- ##################end navbar ######################## -->
+    <section class="banner" id="banner">
+    </section>
+    <section class="multi-verticals ng-scope custom_home">
+      <div class="container container-extended text-center">
+        <h2 class="section-heading text-center mt-4" ng-switch=""
+          on="model.country.id"><!-- ngSwitchWhen: 8 --><!-- ngSwitchDefault: -->
+          <span ng-switch-default="" class="ng-scope text-center">Your everyday,
+            right away</span><!-- end ngSwitchWhen: -->
+        </h2>
+        <p class="section-description text-center h3 m-4">Order food and grocery
+          delivery online from hundreds of restaurants and shops nearby.</p>
+        <div class="flex mobile-vertical mt-5 logo_div text-center">
+          <a class="app-link"
+            href="https://apps.apple.com/us/app/talabat-%D8%B7%D9%84%D8%A8%D8%A7%D8%AA-food-ordering/id451001072?utm_campaign=other_campaigns_web_eat_ma_bh_display&amp;utm_source=Footer_download&amp;utm_medium=campaigns">
+            <img src="./assest/images/logo_appstore.svg" alt="appstore talabat"></a>
+          <a class="app-link"
+            href="https://play.google.com/store/apps/details?id=com.talabat&amp;referrer=adjust_reftag%3Dc2VDcRfodCSbL%26utm_source%3DCooperations%26utm_campaign%3Dother_campaigns_and_eat_ma_bh_display%26utm_content%3DFooter_download&amp;utm_campaign=other_campaigns_web_eat_ma_bh_display&amp;utm_medium=campaigns&amp;utm_source=Footer_download">
+            <img src="./assest/images/logo_playstore.svg" alt="playstore
+              talabat"></a>
+          <a class="app-link"
+            href="https://appgallery.huawei.com/#/app/C100450669">
+            <img src="./assest/images/logo_huaweistore1.svg" alt="Huawie talabat"></a>
+        </div>
+      </div>
+    </section>
+    <div class="container slider_two mt-5">
+      <div class="row details">
+        <div class="left col-lg-6 col-md-1 col-sm-1">
+          <a href="#">
+            <img src="./assest/images/vertical-grocery.webp" alt="sorry not found">
+          </a>
+        </div>
+        <div class="right col-lg-6 col-md-1 col-sm-1 row">
+          <a href="#">
+            <img src="./assest/images/vertical-grocery.webp" alt="sorry not found">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--################## start footer ########################### -->
+    <footer class="footer purple-bg ng-scope mt-5" ng-controller="FooterController">
+      <section class="footercontent container p-x-0">
+        <div class="home-footer">
+          <section class="popular-links hidden-xs">
+            <div class="row">
+              <div class="col-sm-4 hidden-xs">
+                <p>Restaurants</p>
+                <a href="/egypt/taboon-zamalek">Taboon</a>
+                <a href="/egypt/dawar-farah-mohandiseen">Dawar Farah -
+                  Mohandiseen</a>
+                <a href="/egypt/planet-africa-city-stars">Planet Africa</a>
+                <a href="/egypt/al-aseel-el-demashky-tagamoa-5">Al Aseel El
+                  Demashky</a>
+                <a href="/egypt/lan-yuan-maadi">Lan Yuan - Maadi</a>
+                <a href="/egypt/restaurants" ng-attr-target="{{enableAllRestDL?
+                  '_self' : null}}" class="p-t-md" target="_self"><i>More
+                    Restaurants...</i></a>
+              </div>
+              <div class="col-sm-4 hidden-xs">
+                <p>Popular Cuisines</p>
+                <a href="/egypt/italian/588/restaurants" target="_self">Italian</a>
+                <a href="/egypt/mexican/589/restaurants" target="_self">Mexican
+                </a>
+                <a href="/egypt/sandwiches/590/restaurants" target="_self">Sandwiches</a>
+                <a href="/egypt/japanese/591/restaurants" target="_self">Japanese
+                </a>
+                <a href="/egypt/pizza/592/restaurants" target="_self">Pizza</a>
+                <a href="/egypt/sitemap" target="_self" class="p-t-md"><i>More
+                    Cuisines...</i></a>
+              </div>
+
+              <div class="col-sm-4 p-l-0 followDiv">
+                <p>Follow us on</p>
+                <div class="row follow-i custom_icons">
+                  <a href="http://www.facebook.com/Talabat"><i class="fa
+                      fa-facebook fa-3x"></i></a>
+                  <a href="http://twitter.com/Talabat"><i class="fa fa-twitter
+                      fa-3x"></i></a>
+                  <a href="http://instagram.com/Talabat"><i class="fa
+                      fa-instagram fa-3x"></i></a>
+                  <a href="https://www.linkedin.com/company/3604171"><i
+                      class="fa fa-linkedin fa-3x"></i></a>
+                  <a href="http://www.youtube.com/TalabatGTC"><i class="fa
+                      fa-youtube-play fa-3x"></i></a>
+                  <span class="stretch"></span>
+
+                </div>
               </div>
             </div>
-          </nav>
-        </div>
-      </section>
-      <!-- ##################end navbar ######################## -->
-
-      <!--?????????????? but your html code of body here ????????????????? -->
-      <section class="home_sec">
-
-      </section>
-      <!--????????????????????????/ end ?????????????????????? -->
-
-      <!--################## start footer ########################### -->
-      <footer class="footer purple-bg ng-scope" ng-controller="FooterController">
-            <section class="footercontent container p-x-0">
-        <div class="home-footer">
-            <section class="popular-links hidden-xs">
-                <div class="row">
-                    <div class="col-sm-4 hidden-xs">
-                        <p>Restaurants</p>
-                                <a href="/egypt/taboon-zamalek">Taboon</a>
-                                <a href="/egypt/dawar-farah-mohandiseen">Dawar Farah - Mohandiseen</a>
-                                <a href="/egypt/planet-africa-city-stars">Planet Africa</a>
-                                <a href="/egypt/al-aseel-el-demashky-tagamoa-5">Al Aseel El Demashky</a>
-                                <a href="/egypt/lan-yuan-maadi">Lan Yuan - Maadi</a>
-                        <a href="/egypt/restaurants" ng-attr-target="{{enableAllRestDL? '_self' : null}}" class="p-t-md" target="_self"><i>More Restaurants...</i></a>
-                    </div>
-                    <div class="col-sm-4 hidden-xs">
-                        <p>Popular Cuisines</p>
-                                <a href="/egypt/italian/588/restaurants" target="_self">Italian</a>
-                                <a href="/egypt/mexican/589/restaurants" target="_self">Mexican </a>
-                                <a href="/egypt/sandwiches/590/restaurants" target="_self">Sandwiches</a>
-                                <a href="/egypt/japanese/591/restaurants" target="_self">Japanese </a>
-                                <a href="/egypt/pizza/592/restaurants" target="_self">Pizza</a>
-                        <a href="/egypt/sitemap" target="_self" class="p-t-md"><i>More Cuisines...</i></a>
-                    </div>
-                    
-                    <div class="col-sm-4 p-l-0 followDiv">
-                      <p>Follow us on</p>
-                        <div class="row follow-i custom_icons">
-                            <a href="http://www.facebook.com/Talabat"><i class="fa fa-facebook fa-3x"></i></a>
-                            <a href="http://twitter.com/Talabat"><i class="fa fa-twitter fa-3x"></i></a>
-                            <a href="http://instagram.com/Talabat"><i class="fa fa-instagram fa-3x"></i></a>
-                            <a href="https://www.linkedin.com/company/3604171"><i class="fa fa-linkedin fa-3x"></i></a>
-                            <a href="http://www.youtube.com/TalabatGTC"><i class="fa fa-youtube-play fa-3x"></i></a>
-                            <span class="stretch"></span>
-                          
-                        </div>
-
-                    </div>
-                </div>
-            </section>
+          </section>
         </div>
         <section class="fix-text p-y-lg">
-            <div class="row">
-                <div class="col-xs-16 col-sm-13">
-                    <span>
-                        For any support or help you can contact us via our Live Chat
-                    </span>
-                </div>
-                <div class="col-xs-16 col-sm-3 text-right">
-                    ©2022 <span>Talabat.com</span>
-                </div>
+          <div class="row">
+            <div class="col-xs-16 col-sm-13">
+              <span>
+                For any support or help you can contact us via our Live Chat
+              </span>
             </div>
+            <div class="col-xs-16 col-sm-3 text-right">
+              ©2022 <span>Talabat.com</span>
+            </div>
+          </div>
         </section>
-            </section>
-      </footer>
-      <!-- ################end footer ###################### -->
-    <script src="https://kit.fontawesome.com/8321aaa57d.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+      </section>
+    </footer>
+    <!-- ################end footer ###################### -->
+    <script src="https://kit.fontawesome.com/8321aaa57d.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"></script>
   </body>
 </html>
