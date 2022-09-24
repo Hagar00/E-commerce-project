@@ -1,0 +1,308 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #323232;
+    font-size: 13px;
+    direction: ltr;
+}
+p
+ {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+a
+{
+    text-decoration: none;
+    background-color: transparent;
+}
+.primary-text {
+    color: rgb(255, 90, 0);
+}
+.green-text{
+    color: rgb(0, 163, 70);
+}
+.primary-button {
+    background-color: rgb(255, 90, 0);
+    color: rgb(255, 255, 255);
+    line-height: 1.25;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px !important;
+}
+/* *********************start style navbar ************** */
+.nav_sec
+{
+    background-color: #ff5a00;
+    line-height: 3em;
+}
+.nav_sec .container nav .container-fluid .collapse ul .custom_li a
+{
+    padding: 0px 20px;
+    height: 44px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.nav_sec .container nav .container-fluid .collapse ul .custom_li a:hover
+{
+    color: rgb(244, 244, 235);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+.nav_sec .container nav .container-fluid .collapse ul .login
+{
+    border: 1px solid white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.nav_sec .container nav .container-fluid .collapse ul .login:hover
+{
+    background-color: #FF9459;
+}
+.navbar .navbar-toggler {
+    color: rgba(255,255,255,.55);
+    border-color: rgba(255,255,255,.1);
+}
+.navbar-toggler:hover {
+    text-decoration: none;
+}
+
+/******************** end style navbar ******************** */
+
+
+.home_sec
+{
+    width: 100%;
+    height: 800px;
+}
+/*************** Register Section *************/
+
+.register_sec{
+    padding-top: 62px;
+}
+.layout-container{
+    margin: 0px auto 20px;
+    max-width: 1000px;
+    background: rgb(255, 255, 255);
+    height: 100%;
+    box-shadow: rgb(171 169 171) 0px 0px 5px 0px;
+    overflow: auto;
+    min-height: calc(100vh - 250px);
+}
+.register-container{
+    width: 50%;
+    margin: 0px auto;
+}
+.googleBtn{
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid rgb(224, 224, 224);
+    background-color: transparent;
+}
+.googleBtn img{
+    height: 34px;
+}
+
+.facebookBtn {
+    width: 100%;
+    border-radius: 4px;
+    background-color: rgb(87, 119, 185);
+    color: white;
+    padding: 5px 0px !important;
+    border: 1px solid rgb(224, 224, 224);
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(224, 224, 224);
+    position: relative;
+}
+.line span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+.password input{
+    border: 0px;
+    width: calc(100% - 43px);
+}
+.radio-item{
+    flex: 1 1 auto;
+}
+input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0px;
+}
+.radio-item:first-of-type label {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.radio-item label {
+    cursor: pointer;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border: 1px solid rgb(224, 224, 224);
+}
+.radio-item:last-of-type label {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.birthdate{
+    position: relative;
+}
+.input-container{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.birthdate .icon svg{
+    position: absolute;
+    top: 6px;
+    right: 20px;
+    width: 15px;
+    height: 28px;
+}
+
+.checkboxContainer label {
+    color: rgb(50, 50, 50);
+    cursor: pointer;
+    display: table;
+    width: 400px;
+}
+.checkboxContainer label input[type="checkbox"] {
+    display: none;
+}
+
+.checkboxContainer label .span {
+    display: inline-block;
+    font-size: 14px;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 2px;
+    background: url(../images/filter-checkbox.svg) 0px 0px / 18px no-repeat;
+}
+
+.login-btn{
+    width: 35%;  
+}
+
+/* ******************* start style footer ****************** */
+.footer 
+{
+    color: #d8d8d8;
+    background-color: #262626;
+    position: relative;
+}
+.follow-i, .footerlinks, .popular-links 
+{
+    border-bottom: 1px solid #3b3b3b;
+}
+.footerlinks 
+{
+    display: flex;
+    justify-content: space-between;
+}
+.footerlinks a:first-child 
+{
+    padding-left: 0;
+}
+.footerlinks a 
+{
+    color: #999;
+    padding: 0 12.4px;
+    transition: color .2s ease-out;
+}
+.popular-links 
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.row 
+{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.popular-links p 
+{
+    color: #999;
+    font-size: 14px;
+}
+p 
+{
+    margin: 0 0 10px;
+}
+.popular-links a {
+    color: #fff!important;
+    width: auto;
+    display: block;
+    padding: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.p-l-0, .p-x-0 {
+    padding-left: 0!important;
+}
+.p-t-md {
+    padding-top: 1.5rem!important;
+}
+.follow-i a {
+    display: inline-block;
+}
+.custom_icons
+{
+    justify-content: space-evenly;
+}
+.siteindex {
+    margin: 0 -10px;
+}
+.siteindex button.btn-block {
+    background-color: #262626;
+    text-align: left;
+    color: #ffeded;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+.siteindex button.btn-block i {
+    opacity: .5;
+    right: 13px;
+    position: absolute;
+}
+.collapse {
+    display: none;
+}
+.siteindex a {
+    color: #969696;
+    display: block;
+    padding: 10px 0 0 25px;
+    text-align: left;
+}
+.splitter {
+    border-bottom: 0.5px solid hsla(0,0%,100%,.2);
+    margin-left: 13px;
+    margin-right: 13px;
+}
+/* ********************** end style footer **********************/
+
+
+
