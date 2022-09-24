@@ -143,19 +143,7 @@ a
 {
     max-width: 162px;
 }
-.slider_two .details >div 
-{
-    text-align: center;
-}
-.slider_two .details >div a img
-{
-    max-width: 300px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
+
 /* **************** start about section *************** */
 .slider_one
 {
@@ -526,7 +514,7 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
 }
 
 @media (max-width:575.999px) {
-    .card {
+    .custom_card {
         width: 80%;
         margin-left: 50px;
         margin-top: 10px;
@@ -542,7 +530,7 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
             border: 1px;
             border-radius: 10px;
     }
-    button {
+    #search_btn {
         width: 20%;
         padding: 3%;
         border: 1px;
