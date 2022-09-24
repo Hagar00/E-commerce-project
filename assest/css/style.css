@@ -84,6 +84,50 @@ a
 .navbar-toggler:hover {
     text-decoration: none;
 }
+/***************** all restaurant ********************** */
+.home_sec
+{
+    width: 100%;    
+    background-image:url('/E-commerce-project/Images/pexels-adrien-olichon-2387793.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+.container{
+    border-radius: 10px;
+}
+#span1{
+    width: 98%;
+    background-color: white;
+    /* color: chartreuse; */
+    border: 1px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: x-large;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+#search_btn
+{
+    float: right;
+    width: 6%;
+    padding: 1%;
+    border: 1px;
+    border-radius: 10px;
+}
+#inp1{
+    float: right;
+    /* height: 100%; */
+    width: 22%;
+    padding: 1%;
+    border: 1px;
+    border-radius: 10px;
+}
+.card:hover{
+    transform: scale3d(1.1,1.1,1.1);
+    box-shadow: 1px 1px 15px rgb(107, 107, 109);
+}
 
 /******************** end style navbar ******************** */
 .banner 
@@ -481,4 +525,27 @@ textarea:hover, input:hover, textarea:active, input:active, textarea:focus, inpu
     height: 200px;
 }
 
-
+@media (max-width:575.999px) {
+    .card {
+        width: 80%;
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom:30px ;
+        /* display: inline; */
+    }
+    #span1{
+        margin-top: 10%;
+    }
+    #inp1{
+        width: 80%;
+        padding: 3%;
+            border: 1px;
+            border-radius: 10px;
+    }
+    button {
+        width: 20%;
+        padding: 3%;
+        border: 1px;
+        border-radius: 10px;
+    }
+}
