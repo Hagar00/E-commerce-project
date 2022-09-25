@@ -297,6 +297,57 @@ input[type="radio"] {
 
 /* ************************ end about section****************** */
 
+/* ******************* start Brand Psage ****************** */
+.brandPage_sec{
+    padding-top: 0px;
+}
+.layout-container{
+    margin: 0px auto 20px;
+    max-width: 1000px;
+    background: rgb(255, 255, 255);
+    height: 100%;
+    box-shadow: rgb(171 169 171) 0px 0px 5px 0px;
+    overflow: auto;
+    min-height: calc(100vh - 250px);
+}
+
+.brand-header{
+    min-height: 300px;
+    background: url(../images/brandpage-bg.webp) center top / cover no-repeat;
+    margin: 0px -16px;
+    padding: 0px 10px;
+}
+.brand-box{
+    background-color: rgba(25, 25, 25, 0.5);
+    border-radius: 10px;
+}
+.brand-logo{
+    width: 130px;
+    border-radius: 5px;
+}
+.cuisine-string {
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+}
+.brand-description{
+    background-color: rgb(255, 255, 255);
+    border-top: 7px solid rgb(255, 90, 0);
+    margin-top: -30px;
+    box-shadow: rgb(153 153 153) -5px -7px 12px -5px, rgb(153 153 153) 4px -6px 12px -5px;
+}
+.add-to-cart{
+   width: 75%;
+   padding: 4px;
+   background-color: transparent;
+   border: 1px solid rgb(255, 90, 0); 
+   color: rgb(255, 90, 0);
+   border-radius: 5px;
+}
+.add-to-cart:hover{
+    border-color: #0a58ca; 
+    color: #0a58ca;
+}
+/* ************************ end Prand Page ****************** */
 
 /* ******************* start style footer ****************** */
 .footer 
@@ -395,6 +446,7 @@ p
     margin-right: 13px;
 }
 /* ********************** end style footer **********************/
+
 /* ***********************contact us style ********************** */
 .inner-page {
     box-shadow: 0 0 5px 0 rgb(171 169 171);
