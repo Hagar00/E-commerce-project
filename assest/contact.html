@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>contact us </title>
+</head>
+<body>
+    <!-- ################## start navbar ########### -->
+    <section class="nav_sec fixed-top">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="./images/logo.svg" alt="sorry not found"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item ml-4 custom_li">
+                    <a class="nav-link active" aria-current="page" href="./All_resturants.html">All restaurants</a>
+                  </li>
+                  <li class="nav-item ml-4 custom_li">
+                    <a class="nav-link" href="./about.html">about us</a>
+                  </li>
+                  <li class="nav-item ml-4 custom_li">
+                    <a class="nav-link" href="./contact.html">contact us </a>
+                  </li>
+                  <li class="nav-item ml-4 custom_li login ">
+                    <a class="nav-link" href="./login.html"> Log in </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </section>
+    <!-- ##################end navbar ######################## -->
+    <!--############## start contact section ################# -->
+    <section class="container inner-page">
+        <div class="row isapp">
+            <div class="col-xs-16">
+                <h1 class="h2 m-a-0 f-20-m p-y-md b-b"><b>Contact Us</b></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-16 col-sm-12">
+                <h3 class="f-17 bold">How may we help you?</h3>
+                <b class="text-727272">Our agents are available 24x7 to make sure that all your issues and inquiries are resolved.</b>
+                <section class="m-y-md mt-5">
+                    <div class="btn-group btn-group-justified most-tab-group m-b-lg m-b-md-m" role="group">
+                        <div class="btn-group" role="group">
+                            <button class="btn b-b customerBtn active b-radius-0" onclick="changeSection('customer')">
+                                <p class="h4 f-15-m">
+                                    <span class="p-r">
+                                        <img src="./images/icon-customer.webp" alt="Customer" height="25" />
+                                    </span>
+                                    <span class="text-left">Need Help?</span>
+                                </p>
+                            </button>
+                        </div>
+                         <div class="btn-group" role="group">
+                                <button class="btn b-b restBtn b-radius-0" onclick="changeSection('restaurant')">
+                                    <p class="h4 f-15-m">
+                                        <span class="p-r">
+                                            <img src="./images/icon_join.webp" alt="restaurant" height="25" />
+                                        </span>
+                                        <span class="text-left">Join Us</span>
+                                    </p>
+                                </button>
+                         </div>
+                    </div>
+                </section>
+                <section class="customer-section m-b-md">
+                    <div class="row">  
+                        <div class="col-xs-12 col-sm-6 col-sm-pull-2 col-md-8">
+                            <div id="contactus-success" class="light-grey-bg text-center p-a-md" style="display: none;">
+                                <img src="/images/Talabat/greenCheck.png" width="40" />
+                                <p class="h4 m-a-md"><b>Thank you for contacting us</b></p>
+                                <p class="h5 p-a-0">We value every feedback we receive</p>
+                            </div>
+                            <div id="contactus">
+                                <p class="f-17"><b>Write to us</b></p>
+                                <p  id="liveagent_button_online_contactUs_5731r000000btk9"><b class="f-14 text-727272">You may start a <a href="#" onClick="window.open('/egypt/livechat', '_blank', 'toolbar=yes,scrollbars=yes,resizable=yes,top=50,left=50,width=450,height=500'); return false;" class="orange green-text">Live Chat</a> with one of our agents for any queries.</b></p>
+                                <p class="m-b-md"><b class="f-14 text-727272">Or you can fill the below contact form and we make sure to get back to you as soon as possible.</b></p>
+                                <form id="contactus-form">
+                                    <input type="hidden" id="countryId" name="countryId" value="9" />
+                                    <input type="hidden" id="appbrand" name="appbrand" value="" />
+                                    <div class="form-group font-weight-bold">
+                                        <label for="name">Name <span class="orange">*</span></label>
+                                        <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="mailFrom">Email <span class="orange">*</span></label>
+                                        <input type="email" id="mailFrom" name="mailFrom" class="form-control" placeholder="Email" required>
+                                    </div>
+                                    <div class="form-group  ">
+                                        <label for="mobile">Mobile</label>
+                                        <input type="tel" id="mobile" name="mobile" class="form-control" placeholder="Mobile" required>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label  for="comments ">Comment <span class="orange ">*</span></label>
+                                        <textarea id="comments" name="comments" class="form-control" required></textarea>
+                                    </div>
+                                    <div class="form-group mt-4">
+                                        <button type="submit" class="btn p-x-lg green text-uppercase"> Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-sm-push-10 m-b-md col-md-4 custom_right">
+                            <div class="light-grey-bg p-a custom_txt">
+                                <p class="f-16"><b>Contact us</b></p>
+                                <b class="text-646464">To get the quickest response in case you need to:</b>
+                                <p class="m-t"><i class="fa fa-check greentext p-r f-17"></i><b class="p-3">Modify your order</b></p>
+                                <p><i class="fa fa-check greentext p-r f-17"></i><b class="p-3">General inquiries</b></p>
+                                <p class="text-646464">You may contact us through our live chat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+    <!--############################ end ######################## -->
+    <!-- ###################### start footer ################### -->
+    <footer class="footer purple-bg ng-scope contact_footer" ng-controller="FooterController">
+        <section class="footercontent container p-x-0">
+            <div class="home-footer">
+                    <section class="popular-links hidden-xs">
+                    <div class="row">
+                <div class="col-sm-4 hidden-xs">
+                    <p>Restaurants</p>
+                            <a href="/egypt/taboon-zamalek">Taboon</a>
+                            <a href="/egypt/dawar-farah-mohandiseen">Dawar Farah - Mohandiseen</a>
+                            <a href="/egypt/planet-africa-city-stars">Planet Africa</a>
+                            <a href="/egypt/al-aseel-el-demashky-tagamoa-5">Al Aseel El Demashky</a>
+                            <a href="/egypt/lan-yuan-maadi">Lan Yuan - Maadi</a>
+                    <a href="/egypt/restaurants" ng-attr-target="{{enableAllRestDL? '_self' : null}}" class="p-t-md" target="_self"><i>More Restaurants...</i></a>
+                </div>
+                <div class="col-sm-4 hidden-xs">
+                    <p>Popular Cuisines</p>
+                            <a href="/egypt/italian/588/restaurants" target="_self">Italian</a>
+                            <a href="/egypt/mexican/589/restaurants" target="_self">Mexican </a>
+                            <a href="/egypt/sandwiches/590/restaurants" target="_self">Sandwiches</a>
+                            <a href="/egypt/japanese/591/restaurants" target="_self">Japanese </a>
+                            <a href="/egypt/pizza/592/restaurants" target="_self">Pizza</a>
+                    <a href="/egypt/sitemap" target="_self" class="p-t-md"><i>More Cuisines...</i></a>
+                </div>
+                <div class="col-sm-4 p-l-0 followDiv">
+                  <p>Follow us on</p>
+                    <div class="row follow-i custom_icons">
+                        <a href="http://www.facebook.com/Talabat"><i class="fa fa-facebook fa-3x"></i></a>
+                        <a href="http://twitter.com/Talabat"><i class="fa fa-twitter fa-3x"></i></a>
+                        <a href="http://instagram.com/Talabat"><i class="fa fa-instagram fa-3x"></i></a>
+                        <a href="https://www.linkedin.com/company/3604171"><i class="fa fa-linkedin fa-3x"></i></a>
+                        <a href="http://www.youtube.com/TalabatGTC"><i class="fa fa-youtube-play fa-3x"></i></a>
+                        <span class="stretch"></span>
+                      
+                    </div>
+                </div>
+                    </div>
+                    </section>
+            </div>
+            <section class="fix-text p-y-lg">
+        <div class="row">
+            <div class="col-xs-16 col-sm-13">
+                <span>
+                    For any support or help you can contact us via our Live Chat
+                </span>
+            </div>
+            <div class="col-xs-16 col-sm-3 text-right">
+                ©2022 <span>Talabat.com</span>
+            </div>
+        </div>
+            </section>
+        </section>
+    </footer>
+    <!-- #################### end footer ################### -->
+
+    <script src="https://kit.fontawesome.com/8321aaa57d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
