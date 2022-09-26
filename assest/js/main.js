@@ -27,3 +27,36 @@ $("#Hot_Dog").on('click', function () {
 $('#categ7').slideToggle(1000);
 });
 // filtering selection functions
+if ($("#Restaurants").hover()) {
+    $("#Restaurants").on('click',function(){
+    $(".cardRestaurants").show();
+    $(".cardBakeries").hide();
+    $(".cardMarkets").hide();
+    })
+} 
+if ($("#Bakeries").hover()) {
+    $("#Bakeries").on ('click',function(){
+    $(".cardBakeries").show();
+    $(".cardRestaurants").hide();
+    $(".cardMarkets").hide();
+    })
+}
+if ($("#Markets").hover()) {
+    $("#Markets").on ('click',function(){
+    $(".cardMarkets").show();
+    $(".cardBakeries").hide();
+    $(".cardRestaurants").hide();
+    })
+}
+// $("#Restaurants").on ('click', function () {
+//     $(".cardBakeries").hide();
+//     $(".cardMarkets").hide();
+// });
+// $("#Bakeries").on ('click', function () {
+//     $(".cardRestaurants").hide();
+//     $(".cardMarkets").hide();
+// });
+// $("#Markets").on ('click', function () {
+//     $(".cardBakeries").hide();
+//     $(".cardRestaurants").hide();
+// });
