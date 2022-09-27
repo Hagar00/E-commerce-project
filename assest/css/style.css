@@ -88,6 +88,7 @@ a
 }
 .container{
     border-radius: 10px;
+    /* overflow: hidden; */
 }
 .card-body{
     /* text-decoration: none; */
@@ -174,6 +175,14 @@ button[type="search"]{
 .category1{
     position:absolute;
 }
+/* .filterDiv{
+    float: left;
+    display: none;
+
+}
+.show {
+    display: block;
+} */
 /* ******************* start style footer ****************** */
 .footer 
 {
