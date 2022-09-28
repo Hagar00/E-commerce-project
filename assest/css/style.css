@@ -270,6 +270,7 @@ p
     margin-left: 13px;
     margin-right: 13px;
 }
+
 /* ********************** end style footer **********************/
 
 
@@ -313,4 +314,17 @@ p
         border-radius: 10px;
     }
     
+}
+/* *****************  Cart style  ******************* */
+button.checkout-btn{
+    background-color:green;
+   border: green;
+  padding: 1em;
+   height: 3.5em;
+}
+.pagination button.qty-icons i{
+    color: #ff5a00;
+}
+.pagination input.input-qty {
+    color:black;
 }
