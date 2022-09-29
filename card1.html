@@ -12,21 +12,27 @@
     <link rel="stylesheet" href="./assest/css/normalize.css">
     <link rel="stylesheet" href="./assest/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./assest/js/jQuery-P.js"></script>
+    <script src="./assest/js/jquery-ui.min.js"></script>
 </head>
 
 <body>
     <!-- ################## start navbar ########### -->
-    <section class="nav_sec fixed-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="./assest/images/logo.svg" alt="sorry not found"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav">
+    <div class="container-fluint fixed-top custom_nav">
+        <nav class="navbar navbar-expand-md navbar-light ">
+            <a href="#" class="navbar-brand ms-5">
+                <img src="./assest/images/logo.svg" alt="logo not found">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                style="background-color:#FF9459">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse custom_ul_nav" id="navbarNav">
+                <ul class="navbar-nav  ms-auto me-5">
+                    <li>
+                        <a href="#" class="nav-link custom_li">home</a>
+                    </li>
                             <li class="nav-item ml-4 custom_li" id="lione">
                                 <a class="nav-link active" aria-current="page" href="All_resturants.html">Services</a>
                                 <div id="divone">
@@ -35,21 +41,19 @@
                                     <a href="#">Markets</a>
                                 </div>
                             </li>
-                            <li class="nav-item ml-4 custom_li">
-                                <a class="nav-link" href="#">about us</a>
+                            <li>
+                                <a href="#" class="nav-link custom_li">About</a>
                             </li>
-                            <li class="nav-item ml-4 custom_li">
-                                <a class="nav-link" href="#">contact us </a>
+                            <li>
+                                <a href="#" class="nav-link custom_li"> Contact Us</a>
                             </li>
-                            <li class="nav-item ml-4 custom_li login ">
-                                <a class="nav-link" href="#"> Log in </a>
+                            <li>
+                                <a href="#" class="nav-link custom_li login">log in </a>
                             </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </section>
+                            </ul>
+                            </div>
+                            </nav>
+                            </div>
     <!-- ##################end navbar ######################## -->
 
     <!--?????????????? but your html code of body here ????????????????? -->
@@ -139,7 +143,7 @@
                                 <div class="card mb-3" style="border: 1px solid;">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./Images/food1.png" class="img-fluid rounded-start" alt="chicken strips" style="width:200px; height: 98px;">
+                                            <img src="./Images/food1.png" class="img-fluid rounded-start imgitems" alt="chicken strips" style="width:200px; height: 107px;">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
@@ -147,7 +151,7 @@
                                                     <span>Deal Box</span>
                                                     <span style="float:right;">EGP 49.00</span>
                                                 </h5>
-                                                <p class="card-text"> 3 Crispy chicken strips pieces with French fries, rice, bread and Groovy sauce.</p>
+                                                <p class="card-text text-muted"> 3 Crispy chicken strips pieces with French fries, rice, bread and Groovy sauce.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -157,16 +161,16 @@
                                 <div class="card mb-3" style="border: 1px solid;">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./Images/Cheesy Fries.png" class="img-fluid rounded-start" alt="chicken strips"
-                                                style="width:200px; height: 98px;">
+                                            <img src="./Images/Grand_burger637809096070673929.webp" class="img-fluid rounded-start imgitems" alt="chicken strips"
+                                                style="width:200px; height: 107px;">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title">
-                                                    <span>Cheesy Fries</span>
-                                                    <span style="float:right;">EGP 33.00</span>
+                                                    <span>Grand Burger</span>
+                                                    <span style="float:right;">EGP 69.00</span>
                                                 </h5>
-                                                <p class="card-text"> Seasoned French fries with cheddar cheese sauce.</p>
+                                                <p class="card-text text-muted">Angus burger patty with pickled cucumber slices, crispy onion slices, crispy mozzarella cheese sticks. </p>
                                             </div>
                                         </div>
                                     </div>
@@ -176,16 +180,16 @@
                                 <div class="card mb-3" style=" border: 1px solid;">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./Images/Thousand Island Sauce.png" class="img-fluid rounded-start" alt="chicken strips"
-                                                style="width:200px; height: 98px;">
+                                            <img src="./Images/Crispy_white_mushroom637809095906400887.webp" class="img-fluid rounded-start imgitems" alt="chicken strips"
+                                                style="width:200px; height: 107px;">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title">
-                                                    <span>Thousand Island Sauce</span>
-                                                    <span style="float:right;">EGP 7.00</span>
+                                                    <span>Crispy White Mushroom Sandwich</span>
+                                                    <span style="float:right;">EGP 82.00</span>
                                                 </h5>
-                                                <p class="card-text">
+                                                <p class="card-text text-muted">Crispy chicken breasts with grilled bacon, mushroom mixture, pickled cucumber pieces.
                                                 </p>
                                             </div>
                                         </div>
@@ -202,16 +206,16 @@
                                 <div class="card mb-3" style=" border: 1px solid;">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./Images/food1.png" class="img-fluid rounded-start" alt="chicken strips"
-                                                style="width:200px; height: 98px;">
+                                            <img src="./Images/Groovy_offer637981027635704895.webp" class="img-fluid rounded-start imgitems" alt="chicken strips"
+                                                style="width:200px; height: 107px;">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title">
-                                                    <span>Deal Box</span>
-                                                    <span style="float:right;">EGP 49.00</span>
+                                                    <span>Single Crispy Chicken</span>
+                                                    <span style="float:right;">EGP 59.00</span>
                                                 </h5>
-                                                <p class="card-text"> 3 Crispy chicken strips pieces with French fries, rice, bread and Groovy sauce.
+                                                <p class="card-text text-muted"> Served with small french fries and Coca-Cola can.
                                                 </p>
                                             </div>
                                         </div>
@@ -222,16 +226,16 @@
                                 <div class="card mb-3" style=" border: 1px solid;">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./Images/food1.png" class="img-fluid rounded-start" alt="chicken strips"
-                                                style="width:200px; height: 98px;">
+                                            <img src="./Images/Groovy_offer637981027635704895.webp" class="img-fluid rounded-start imgitems" alt="chicken strips"
+                                                style="width:200px; height: 107px;">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title">
-                                                    <span>Deal Box</span>
-                                                    <span style="float:right;">EGP 49.00</span>
+                                                    <span>2 Single Crispy Chicken</span>
+                                                    <span style="float:right;">EGP 259.00</span>
                                                 </h5>
-                                                <p class="card-text"> 3 Crispy chicken strips pieces with French fries, rice, bread and Groovy sauce.
+                                                <p class="card-text text-muted"> Served with 2 large french fries and Coca-Cola liter.
                                                 </p>
                                             </div>
                                         </div>
@@ -242,16 +246,16 @@
                                 <div class="card mb-3" style=" border: 1px solid;">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./Images/food1.png" class="img-fluid rounded-start" alt="chicken strips"
-                                                style="width:200px; height: 98px;">
+                                            <img src="./Images/hotdog.webp" class="img-fluid rounded-start imgitems" alt="chicken strips"
+                                                style="width:200px; height: 107px;">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title">
-                                                    <span>Deal Box</span>
-                                                    <span style="float:right;">EGP 49.00</span>
+                                                    <span>American Hot Dog</span>
+                                                    <span style="float:right;">EGP 47.00</span>
                                                 </h5>
-                                                <p class="card-text"> 3 Crispy chicken strips pieces with French fries, rice, bread and Groovy sauce.
+                                                <p class="card-text text-muted"> Served with medium french fries and drink of your choice.
                                                 </p>
                                             </div>
                                         </div>
@@ -268,16 +272,16 @@
                                 <div id="categ3" class="card mb-3" style="border: 1px solid;">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./Images/food1.png" class="img-fluid rounded-start" alt="chicken strips"
-                                                style="width:200px; height: 98px;">
+                                            <img src="./Images/value1.webp" class="img-fluid rounded-start imgitems" alt="chicken strips"
+                                                style="width:200px; height: 107px;">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title">
-                                                    <span>Deal Box</span>
-                                                    <span style="float:right;">EGP 49.00</span>
+                                                    <span>Crispy Smoked Sandwich</span>
+                                                    <span style="float:right;">EGP 99.00</span>
                                                 </h5>
-                                                <p class="card-text"> 3 Crispy chicken strips pieces with French fries, rice, bread and Groovy sauce.
+                                                <p class="card-text text-muted"> Served with ranch sauce ranch and bbq sauce.
                                                 </p>
                                             </div>
                                         </div>
@@ -288,42 +292,23 @@
                                 <div class="card mb-3" style="border: 1px solid;">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./Images/food1.png" class="img-fluid rounded-start" alt="chicken strips"
-                                                style="width:200px; height: 98px;">
+                                            <img src="./Images/value2.webp" class="img-fluid rounded-start imgitems" alt="chicken strips"
+                                                style="width:200px; height: 107px;">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title">
-                                                    <span>Deal Box</span>
-                                                    <span style="float:right;">EGP 49.00</span>
+                                                    <span>Texas Burger 150 GM Sandwich</span>
+                                                    <span style="float:right;">EGP 149.00</span>
                                                 </h5>
-                                                <p class="card-text"> 3 Crispy chicken strips pieces with French fries, rice, bread and Groovy sauce.
+                                                <p class="card-text text-muted"> Served with chicken fajita sandwich, ranch sauce ranch and texas sauce.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="card mb-3" style="border: 1px solid;">
-                                    <div class="row g-0">
-                                        <div class="col-md-4">
-                                            <img src="./Images/food1.png" class="img-fluid rounded-start" alt="chicken strips"
-                                                style="width:200px; height: 98px;">
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body">
-                                                <h5 class="card-title">
-                                                    <span>Deal Box</span>
-                                                    <span style="float:right;">EGP 49.00</span>
-                                                </h5>
-                                                <p class="card-text"> 3 Crispy chicken strips pieces with French fries, rice, bread and Groovy sauce.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                         <div class="row">
                             <span id="Groovy_Offers" style="background-color:rgb(238, 231, 229)">Groovy Offers</span>
@@ -334,17 +319,16 @@
                                 <div class="card mb-3" style="border: 1px solid;">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./Images/food1.png" class="img-fluid rounded-start" alt="chicken strips"
-                                                style="width:200px; height: 98px;">
+                                            <img src="./Images/offers.svg" class="img-fluid rounded-start" alt="chicken strips"
+                                                style="width:210px; height: 98px; margin-left: -45px;">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title">
-                                                    <span>Deal Box</span>
-                                                    <span style="float:right;">EGP 49.00</span>
+                                                    <span>Chicken BBQ Combo </span>
+                                                    <span style="float:right;">EGP 55.00</span>
                                                 </h5>
-                                                <p class="card-text"> 3 Crispy chicken strips pieces with French fries, rice, bread and Groovy
-                                                    sauce.
+                                                <p class="card-text text-muted">Chicken BBQ sandwich with cola & fries.
                                                 </p>
                                             </div>
                                         </div>
@@ -355,17 +339,16 @@
                                 <div class="card mb-3" style="border: 1px solid;">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./Images/food1.png" class="img-fluid rounded-start" alt="chicken strips"
-                                                style="width:200px; height: 98px;">
+                                            <img src="./Images/offers.svg" class="img-fluid rounded-start" alt="chicken strips"
+                                                style="width:200px; height: 107px; margin-left: -43px;">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title">
-                                                    <span>Deal Box</span>
-                                                    <span style="float:right;">EGP 49.00</span>
+                                                    <span>Crispy Offer</span>
+                                                    <span style="float:right;">EGP 125.00</span>
                                                 </h5>
-                                                <p class="card-text"> 3 Crispy chicken strips pieces with French fries, rice, bread and Groovy
-                                                    sauce.
+                                                <p class="card-text text-muted"> Crispy Chicken Ranch Single combo + Crispy Smoked Single combo.
                                                 </p>
                                             </div>
                                         </div>
@@ -376,17 +359,16 @@
                                 <div class="card mb-3" style="border: 1px solid;">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./Images/food1.png" class="img-fluid rounded-start" alt="chicken strips"
-                                                style="width:200px; height: 98px;">
+                                            <img src="./Images/offers.svg" class="img-fluid rounded-start" alt="chicken strips"
+                                                style="width:200px; height: 107px; margin-left: -40px;">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title">
-                                                    <span>Deal Box</span>
-                                                    <span style="float:right;">EGP 49.00</span>
+                                                    <span>Dou combo offer</span>
+                                                    <span style="float:right;">EGP 135.00</span>
                                                 </h5>
-                                                <p class="card-text"> 3 Crispy chicken strips pieces with French fries, rice, bread and Groovy
-                                                    sauce.
+                                                <p class="card-text">Crispy Chicken Ranch Single combo + Classic cheese burger 150GM combo.
                                                 </p>
                                             </div>
                                         </div>
@@ -403,17 +385,16 @@
                                 <div class="card mb-3" style="border: 1px solid;">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./Images/food1.png" class="img-fluid rounded-start" alt="chicken strips"
-                                                style="width:200px; height: 98px;">
+                                            <img src="./Images/Texas_burger6378090967851637841561925748241.webp" class="img-fluid rounded-start imgitems" alt="chicken strips"
+                                                style="width:200px; height: 107px;">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title">
-                                                    <span>Deal Box</span>
-                                                    <span style="float:right;">EGP 49.00</span>
+                                                    <span>Texas Burger</span>
+                                                    <span style="float:right;">EGP 67.00</span>
                                                 </h5>
-                                                <p class="card-text"> 3 Crispy chicken strips pieces with French fries, rice, bread and Groovy
-                                                    sauce.
+                                                <p class="card-text text-muted"> Angus burger patty with grilled bacon, lettuce, onions, pickled cucumber slices.
                                                 </p>
                                             </div>
                                         </div>
@@ -424,17 +405,16 @@
                                 <div class="card mb-3" style="border: 1px solid;">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./Images/food1.png" class="img-fluid rounded-start" alt="chicken strips"
-                                                style="width:200px; height: 98px;">
+                                            <img src="./Images/ameri.webp" class="img-fluid rounded-start imgitems" alt="chicken strips"
+                                                style="width:200px; height: 107px;">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title">
-                                                    <span>Deal Box</span>
+                                                    <span>American Burger</span>
                                                     <span style="float:right;">EGP 49.00</span>
                                                 </h5>
-                                                <p class="card-text"> 3 Crispy chicken strips pieces with French fries, rice, bread and Groovy
-                                                    sauce.
+                                                <p class="card-text text-muted"> Angus burger patty with lettuce, onions, pickled cucumber slices, American cheese slices.
                                                 </p>
                                             </div>
                                         </div>
@@ -445,17 +425,16 @@
                                 <div class="card mb-3" style="border: 1px solid;">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./Images/food1.png" class="img-fluid rounded-start" alt="chicken strips"
-                                                style="width:200px; height: 98px;">
+                                            <img src="./Images/Mexican_burger637809096634451963.webp" class="img-fluid rounded-start imgitems" alt="chicken strips"
+                                                style="width:200px; height: 107px;">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title">
-                                                    <span>Deal Box</span>
-                                                    <span style="float:right;">EGP 49.00</span>
+                                                    <span>Mexican Burger</span>
+                                                    <span style="float:right;">EGP 69.00</span>
                                                 </h5>
-                                                <p class="card-text"> 3 Crispy chicken strips pieces with French fries, rice, bread and Groovy
-                                                    sauce.
+                                                <p class="card-text text-muted"> Angus burger patty with Mexican hot dog mixture, pickled cucumber pieces, lettuce.
                                                 </p>
                                             </div>
                                         </div>
@@ -472,17 +451,16 @@
                                 <div class="card mb-3" style="border: 1px solid;">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./Images/food1.png" class="img-fluid rounded-start" alt="chicken strips"
-                                                style="width:200px; height: 98px;">
+                                            <img src="./Images/Chicken_Fajita_Sandwich637836695992517453.webp" class="img-fluid rounded-start imgitems" alt="chicken strips"
+                                                style="width:200px; height: 107px;">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title">
-                                                    <span>Deal Box</span>
-                                                    <span style="float:right;">EGP 49.00</span>
+                                                    <span>Chicken Fajita Sandwich</span>
+                                                    <span style="float:right;">EGP 41.00</span>
                                                 </h5>
-                                                <p class="card-text"> 3 Crispy chicken strips pieces with French fries, rice, bread and Groovy
-                                                    sauce.
+                                                <p class="card-text text-muted">Grilled chicken pieces, pickled cucumber pieces, pepper slices, onions, olives.
                                                 </p>
                                             </div>
                                         </div>
@@ -493,17 +471,16 @@
                                 <div class="card mb-3" style="border: 1px solid;">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./Images/food1.png" class="img-fluid rounded-start" alt="chicken strips"
-                                                style="width:200px; height: 98px;">
+                                            <img src="./Images/Grand_crispy637809096197226037.webp" class="img-fluid rounded-start imgitems" alt="chicken strips"
+                                                style="width:200px; height: 107px;">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title">
-                                                    <span>Deal Box</span>
-                                                    <span style="float:right;">EGP 49.00</span>
+                                                    <span>Grand Crispy Sandwich</span>
+                                                    <span style="float:right;">EGP 69.00</span>
                                                 </h5>
-                                                <p class="card-text"> 3 Crispy chicken strips pieces with French fries, rice, bread and Groovy
-                                                    sauce.
+                                                <p class="card-text text-muted"> Crispy chicken breasts with pickled cucumber pieces, crispy onion slices, crispy mozzarella cheese sticks.
                                                 </p>
                                             </div>
                                         </div>
@@ -514,17 +491,16 @@
                                 <div class="card mb-3" style="border: 1px solid;">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./Images/food1.png" class="img-fluid rounded-start" alt="chicken strips"
-                                                style="width:200px; height: 98px;">
+                                            <img src="./Images/Crispy_star637809094422517443.webp" class="img-fluid rounded-start imgitems" alt="chicken strips"
+                                                style="width:200px; height: 127px;">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title">
-                                                    <span>Deal Box</span>
-                                                    <span style="float:right;">EGP 49.00</span>
+                                                    <span>Crispy Star Sandwich</span>
+                                                    <span style="float:right;">EGP 77.00</span>
                                                 </h5>
-                                                <p class="card-text"> 3 Crispy chicken strips pieces with French fries, rice, bread and Groovy
-                                                    sauce.
+                                                <p class="card-text text-muted"> Crispy chicken breasts with smoked turkey, pickled cucumber pieces, lettuce, crispy mozzarella cheese sticks.
                                                 </p>
                                             </div>
                                         </div>
@@ -541,17 +517,16 @@
                                 <div class="card mb-3" style="border: 1px solid;">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./Images/food1.png" class="img-fluid rounded-start" alt="chicken strips"
-                                                style="width:200px; height: 98px;">
+                                            <img src="./Images/Chicago_Sandwich637836695618299667.webp" class="img-fluid rounded-start imgitems" alt="chicken strips"
+                                                style="width:200px; height: 107px;">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title">
-                                                    <span>Deal Box</span>
-                                                    <span style="float:right;">EGP 49.00</span>
+                                                    <span>Chicago Sandwich</span>
+                                                    <span style="float:right;">EGP 29.00</span>
                                                 </h5>
-                                                <p class="card-text"> 3 Crispy chicken strips pieces with French fries, rice, bread and Groovy
-                                                    sauce.
+                                                <p class="card-text text-muted">Mexican hot dog mix with French fries, pickled cucumber slices, ranch sauce and Groovy sauce.
                                                 </p>
                                             </div>
                                         </div>
@@ -562,44 +537,23 @@
                                 <div class="card mb-3" style="border: 1px solid;">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="./Images/food1.png" class="img-fluid rounded-start" alt="chicken strips"
-                                                style="width:200px; height: 98px;">
+                                            <img src="./Images/American_Hot_Dog_Sandwich637836695655444320.webp" class="img-fluid rounded-start imgitems" alt="chicken strips"
+                                                style="width:200px; height: 107px;">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title">
-                                                    <span>Deal Box</span>
-                                                    <span style="float:right;">EGP 49.00</span>
+                                                    <span>American Hot Dog</span>
+                                                    <span style="float:right;">EGP 39.00</span>
                                                 </h5>
-                                                <p class="card-text"> 3 Crispy chicken strips pieces with French fries, rice, bread and Groovy
-                                                    sauce.
+                                                <p class="card-text text-muted">Fried hot dogs with pickled cucumber slices, lettuce, American cheese slices, ranch sauce.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="card mb-3" style="border: 1px solid;">
-                                    <div class="row g-0">
-                                        <div class="col-md-4">
-                                            <img src="./Images/food1.png" class="img-fluid rounded-start" alt="chicken strips"
-                                                style="width:200px; height: 98px;">
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body">
-                                                <h5 class="card-title">
-                                                    <span>Deal Box</span>
-                                                    <span style="float:right;">EGP 49.00</span>
-                                                </h5>
-                                                <p class="card-text"> 3 Crispy chicken strips pieces with French fries, rice, bread and Groovy
-                                                    sauce.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                         <br>
                     </div>
@@ -646,49 +600,52 @@
     <!--????????????????????????/ end ?????????????????????? -->
 
     <!--################## start footer ########################### -->
-    <footer class="footer purple-bg ng-scope" ng-controller="FooterController">
-        <section class="footercontent container p-x-0">
-            <div class="home-footer">
-                <section class="popular-links hidden-xs">
-                    <div class="row">
-                        <div class="col-sm-4 hidden-xs">
-                            <p>Restaurants</p>
-                            <a href="/egypt/taboon-zamalek">Taboon</a>
-                            <a href="/egypt/dawar-farah-mohandiseen">Dawar Farah - Mohandiseen</a>
-                            <a href="/egypt/planet-africa-city-stars">Planet Africa</a>
-                            <a href="/egypt/al-aseel-el-demashky-tagamoa-5">Al Aseel El Demashky</a>
-                            <a href="/egypt/lan-yuan-maadi">Lan Yuan - Maadi</a>
-                            <a href="/egypt/restaurants" ng-attr-target="{{enableAllRestDL? '_self' : null}}"
-                                class="p-t-md" target="_self"><i>More Restaurants...</i></a>
+    <div class="footer">
+        <div class="container">
+            <div class="row details_footer">
+                <div class="one col-lg-4 col-md-12 col-sm-12">
+                    <p>Restaurants</p>
+                    <a href="/egypt/taboon-zamalek" class="custom_a d-block">Taboon</a>
+                    <a href="/egypt/dawar-farah-mohandiseen" class="custom_a d-block">Dawar Farah - Mohandiseen</a>
+                    <a href="/egypt/planet-africa-city-stars" class="custom_a d-block">Planet Africa</a>
+                    <a href="/egypt/al-aseel-el-demashky-tagamoa-5" class="custom_a d-block">Al Aseel El Demashky</a>
+                    <a href="/egypt/lan-yuan-maadi" class="custom_a d-block">Lan Yuan - Maadi</a>
+                </div>
+                <div class="two col-lg-4 col-md-12 col-sm-12">
+                    <p>Popular Cuisines</p>
+                    <a href="/egypt/italian/588/restaurants" class="custom_a d-block" target="_self">Italian</a>
+                    <a href="/egypt/mexican/589/restaurants" class="custom_a d-block" target="_self">Mexican </a>
+                    <a href="/egypt/sandwiches/590/restaurants" class="custom_a d-block" target="_self">Sandwiches</a>
+                    <a href="/egypt/japanese/591/restaurants" class="custom_a d-block" target="_self">Japanese </a>
+                    <a href="/egypt/pizza/592/restaurants" class="custom_a d-block" target="_self">Pizza</a>
+    
+                </div>
+                <div class="three col-lg-4 col-md-12 col-sm-12">
+                    <p>&nbsp;&nbsp; Follow us on</p>
+                    <div class="row follow_icon">
+                        <div class="IconOne col-lg-2 col-md-2 col-sm-2">
+                            <a href="http://www.facebook.com/Talabat" class="custom_a"><i
+                                    class="fa fa-facebook fa-3x"></i></a>
                         </div>
-                        <div class="col-sm-4 hidden-xs">
-                            <p>Popular Cuisines</p>
-                            <a href="/egypt/italian/588/restaurants" target="_self">Italian</a>
-                            <a href="/egypt/mexican/589/restaurants" target="_self">Mexican </a>
-                            <a href="/egypt/sandwiches/590/restaurants" target="_self">Sandwiches</a>
-                            <a href="/egypt/japanese/591/restaurants" target="_self">Japanese </a>
-                            <a href="/egypt/pizza/592/restaurants" target="_self">Pizza</a>
-                            <a href="/egypt/sitemap" target="_self" class="p-t-md"><i>More Cuisines...</i></a>
+                        <div class="IconTwo col-lg-2 col-md-2 col-sm-2">
+                            <a href="http://twitter.com/Talabat" class="custom_a"><i class="fa fa-twitter fa-3x"></i></a>
                         </div>
-
-                        <div class="col-sm-4 p-l-0 followDiv">
-                            <p>&nbsp;&nbsp; Follow us on</p>
-                            <div class="row follow-i custom_icons">
-                                <a href="http://www.facebook.com/Talabat"><i class="fa fa-facebook fa-3x"></i></a>
-                                <a href="http://twitter.com/Talabat"><i class="fa fa-twitter fa-3x"></i></a>
-                                <a href="http://instagram.com/Talabat"><i class="fa fa-instagram fa-3x"></i></a>
-                                <a href="https://www.linkedin.com/company/3604171"><i
-                                        class="fa fa-linkedin fa-3x"></i></a>
-                                <a href="http://www.youtube.com/TalabatGTC"><i class="fa fa-youtube-play fa-3x"></i></a>
-                                <span class="stretch"></span>
-
-                            </div>
-
+                        <div class="IconThree col-lg-2 col-md-2 col-sm-2">
+                            <a href="http://instagram.com/Talabat" class="custom_a"><i
+                                    class="fa fa-instagram fa-3x"></i></a>
+                        </div>
+                        <div class="IconFour col-lg-3 col-md-3 col-sm-2">
+                            <a href="https://www.linkedin.com/company/3604171" class="custom_a"><i
+                                    class="fa fa-linkedin fa-3x"></i></a>
+                        </div>
+                        <div class="IconFour col-lg-2 col-md-2 col-sm-2">
+                            <a href="http://www.youtube.com/TalabatGTC" class="custom_a"><i
+                                    class="fa fa-youtube-play fa-3x"></i></a>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
-            <section class="fix-text p-y-lg">
+            <section class="fix-text p-y-lg mt-4">
                 <div class="row">
                     <div class="col-xs-16 col-sm-13">
                         <span>
@@ -700,21 +657,11 @@
                     </div>
                 </div>
             </section>
-        </section>
-    </footer>
+        </div>
+    </div>
     <!-- ################end footer ###################### -->
     <script src="https://kit.fontawesome.com/8321aaa57d.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.6.1.js" 
-        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="./assest/js/bootstrap.min.js"></script>
         <script src="./assest/js/main.js"></script>
 </body>
 
