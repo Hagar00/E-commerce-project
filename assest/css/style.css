@@ -10,7 +10,7 @@ body
     direction: ltr;
 }
 p
- {
+{
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -22,20 +22,27 @@ a
     text-decoration: none;
     background-color: transparent;
 }
-/* *********************start style navbar ************** */
-.nav_sec
+/*  ************** start nav style ********** */
+.custom_ul_nav
+{
+    margin-left: auto;
+}
+nav
+{
+    display: block;
+}
+
+.custom_nav
 {
     background-color: #ff5a00;
-    line-height: 3em;
 }
-.nav_sec .container nav .container-fluid .collapse ul .custom_li a
+.custom_nav nav #navbarNav ul li a
 {
-    padding: 0px 20px;
-    height: 44px;
+    padding: 4px 15px;
     font-size: 20px;
     color: rgb(255, 255, 255);
 }
-.nav_sec .container nav .container-fluid .collapse ul .custom_li a:hover
+.custom_nav nav #navbarNav ul li a:hover
 {
     color: rgb(244, 244, 235);
     transition: all 1s;
@@ -44,7 +51,7 @@ a
     -ms-transition: all 1s;
     -o-transition: all 1s;
 }
-.nav_sec .container nav .container-fluid .collapse ul .login
+.custom_nav nav #navbarNav ul li .login
 {
     border: 1px solid white;
     border-radius: 5px;
@@ -53,7 +60,7 @@ a
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-.nav_sec .container nav .container-fluid .collapse ul .login:hover
+.custom_nav nav #navbarNav ul li .login:hover
 {
     background-color: #FF9459;
 }
@@ -64,117 +71,28 @@ a
 .navbar-toggler:hover {
     text-decoration: none;
 }
-
-/******************** end style navbar ******************** */
-
-
-/*?????????????????? but your style here ?????????????????*/
-.home_sec
-{
-    width: 100%;
-    height: 800px;
-}
-
-
-
-
-/* ******************* start style footer ****************** */
-.footer 
-{
-    color: #d8d8d8;
-    background-color: #262626;
-    position: relative;
-}
-.follow-i, .footerlinks, .popular-links 
-{
-    border-bottom: 1px solid #3b3b3b;
-}
-.footerlinks 
-{
-    display: flex;
-    justify-content: space-between;
-}
-.footerlinks a:first-child 
-{
-    padding-left: 0;
-}
-.footerlinks a 
-{
+/******************  end nav style *********** */
+/* 
+*************** start footer style ***************** */
+ .footer
+ {
     color: #999;
-    padding: 0 12.4px;
-    transition: color .2s ease-out;
-}
-.popular-links 
-{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.row 
-{
-    margin-left: -10px;
-    margin-right: -10px;
-}
-.popular-links p 
-{
-    color: #999;
-    font-size: 14px;
-}
-p 
-{
-    margin: 0 0 10px;
-}
-.popular-links a {
-    color: #fff!important;
-    width: auto;
-    display: block;
-    padding: 5px 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.p-l-0, .p-x-0 {
-    padding-left: 0!important;
-}
-.p-t-md {
-    padding-top: 1.5rem!important;
-}
-.follow-i a {
-    display: inline-block;
-}
-.custom_icons
-{
-    justify-content: space-evenly;
-}
-.siteindex {
-    margin: 0 -10px;
-}
-.siteindex button.btn-block {
+    position:absolute;
+    bottom:0px;
     background-color: #262626;
-    text-align: left;
-    color: #ffeded;
-    text-transform: uppercase;
-    border-radius: 0;
+    width:100%;
+ }
+.follow_icon , .details_footer
+{
+    border-bottom: 1px solid #b9b3b3b8; 
+    padding-bottom: 25px;
 }
-.siteindex button.btn-block i {
-    opacity: .5;
-    right: 13px;
-    position: absolute;
+.custom_a 
+{
+    color: rgb(255,255,255);
 }
-.collapse {
-    display: none;
+.details_footer .three
+{
+    text-align: -webkit-center;
 }
-.siteindex a {
-    color: #969696;
-    display: block;
-    padding: 10px 0 0 25px;
-    text-align: left;
-}
-.splitter {
-    border-bottom: 0.5px solid hsla(0,0%,100%,.2);
-    margin-left: 13px;
-    margin-right: 13px;
-}
-/* ********************** end style footer **********************/
-
-
 
