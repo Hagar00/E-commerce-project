@@ -2,6 +2,10 @@
 {
     box-sizing: border-box;
 }
+html
+{
+    scroll-behavior: smooth;
+}
 body
 {
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -22,6 +26,7 @@ a
     text-decoration: none;
     background-color: transparent;
 }
+
 /*  ************** start nav style ********** */
 .custom_ul_nav
 {
@@ -33,6 +38,26 @@ nav
 }
 
 .custom_nav
+
+.primary-text {
+    color: rgb(255, 90, 0);
+}
+.green-text{
+    color: rgb(0, 163, 70);
+}
+.primary-button {
+    background-color: rgb(255, 90, 0);
+    color: rgb(255, 255, 255);
+    line-height: 1.25;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px !important;
+}
+/* *********************start style navbar ************** */
+.nav_sec
+
 {
     background-color: #ff5a00;
 }
@@ -71,6 +96,7 @@ nav
 .navbar-toggler:hover {
     text-decoration: none;
 }
+
 #divone {
     display: none;
     position: fixed;
@@ -158,6 +184,286 @@ nav
     margin-bottom: 2%;
     color: white;
 }
+
+/***************** all restaurant ********************** */
+.home_sec
+{
+    width: 100%;    
+    background-image:url('/E-commerce-project/Images/pexels-adrien-olichon-2387793.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+.container{
+    border-radius: 10px;
+}
+#span1{
+    width: 98%;
+    background-color: white;
+    /* color: chartreuse; */
+    border: 1px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: x-large;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+#search_btn
+{
+    float: right;
+    width: 6%;
+    padding: 1%;
+    border: 1px;
+    border-radius: 10px;
+}
+#inp1{
+    float: right;
+    /* height: 100%; */
+    width: 22%;
+    padding: 1%;
+    border: 1px;
+    border-radius: 10px;
+}
+.card:hover{
+    transform: scale3d(1.1,1.1,1.1);
+    box-shadow: 1px 1px 15px rgb(107, 107, 109);
+}
+
+/******************** end style navbar ******************** */
+.banner 
+{  
+    background-image: url(../images/4.png);
+    background-attachment: fixed;
+    height: 75vh;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.custom_home .logo_div a > img
+{
+    max-width: 162px;
+}
+
+/* **************** start about section *************** */
+.slider_one
+{
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.slider_one .container .first
+{
+    animation: in_down 4s  ease;
+    -webkit-animation: in_down 4s  ease;
+}
+.slider_one .container .first .content
+{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.slider_one .container .second 
+{
+    padding-top: 40px;
+    animation: in_right 4s  ease;
+    -webkit-animation: in_right 4s  ease;
+}
+.slider_one .container .second .icon .custom ,
+.slider_one .container .third .icon .custom,
+.slider_one .container .third .icon .custom
+{
+    font-size: 3.7rem;
+}
+.slider_one .container .third
+{
+    padding-top: 40px;
+    animation: in_right 4s  ease;
+    -webkit-animation: in_right 4s  ease;
+}
+
+/**************** Register Section *********************/
+.register_sec{
+    padding-top: 62px;
+}
+.layout-container{
+    margin: 0px auto 20px;
+    max-width: 1000px;
+    background: rgb(255, 255, 255);
+    height: 100%;
+    box-shadow: rgb(171 169 171) 0px 0px 5px 0px;
+    overflow: auto;
+    min-height: calc(100vh - 250px);
+}
+.register-container{
+    width: 50%;
+    margin: 0px auto;
+}
+.googleBtn{
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid rgb(224, 224, 224);
+    background-color: transparent;
+}
+.googleBtn img{
+    height: 34px;
+}
+
+.facebookBtn {
+    width: 100%;
+    height: 800px;
+    overflow: auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.home_sec::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.home_sec {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+    border-radius: 4px;
+    background-color: rgb(87, 119, 185);
+    color: white;
+    padding: 5px 0px !important;
+    border: 1px solid rgb(224, 224, 224);
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(224, 224, 224);
+    position: relative;
+}
+.line span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+.password input{
+    border: 0px;
+    width: calc(100% - 43px);
+}
+.radio-item{
+    flex: 1 1 auto;
+}
+input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0px;
+}
+.radio-item:first-of-type label {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.radio-item label {
+    cursor: pointer;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border: 1px solid rgb(224, 224, 224);
+}
+.radio-item:last-of-type label {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.birthdate{
+    position: relative;
+}
+.input-container{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.birthdate .icon svg{
+    position: absolute;
+    top: 6px;
+    right: 20px;
+    width: 15px;
+    height: 28px;
+}
+
+.checkboxContainer label {
+    color: rgb(50, 50, 50);
+    cursor: pointer;
+    display: table;
+    width: 400px;
+}
+.checkboxContainer label input[type="checkbox"] {
+    display: none;
+}
+
+.checkboxContainer label .span {
+    display: inline-block;
+    font-size: 14px;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 2px;
+    background: url(../images/filter-checkbox.svg) 0px 0px / 18px no-repeat;
+}
+
+.login-btn{
+    width: 35%;  
+}
+
+/* ************************ end about section****************** */
+
+/* ******************* start Brand Psage ****************** */
+.brandPage_sec{
+    padding-top: 0px;
+}
+.layout-container{
+    margin: 0px auto 20px;
+    max-width: 1000px;
+    background: rgb(255, 255, 255);
+    height: 100%;
+    box-shadow: rgb(171 169 171) 0px 0px 5px 0px;
+    overflow: auto;
+    min-height: calc(100vh - 250px);
+}
+
+.brand-header{
+    min-height: 300px;
+    background: url(../images/brandpage-bg.webp) center top / cover no-repeat;
+    margin: 0px -16px;
+    padding: 0px 10px;
+}
+.brand-box{
+    background-color: rgba(25, 25, 25, 0.5);
+    border-radius: 10px;
+}
+.brand-logo{
+    width: 130px;
+    border-radius: 5px;
+}
+.cuisine-string {
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+}
+.brand-description{
+    background-color: rgb(255, 255, 255);
+    border-top: 7px solid rgb(255, 90, 0);
+    margin-top: -30px;
+    box-shadow: rgb(153 153 153) -5px -7px 12px -5px, rgb(153 153 153) 4px -6px 12px -5px;
+}
+.add-to-cart{
+   width: 75%;
+   padding: 4px;
+   background-color: transparent;
+   border: 1px solid rgb(255, 90, 0); 
+   color: rgb(255, 90, 0);
+   border-radius: 5px;
+}
+.add-to-cart:hover{
+    border-color: #0a58ca; 
+    color: #0a58ca;
+}
+/* ************************ end Prand Page ****************** */
+
 
 #proceedcheckout:hover {
     background-color: green;
@@ -273,6 +579,7 @@ button.checkout-btn{
    
 }
 
+
 @media (max-width:575.999px) {
     .card {
         width: 80%;
@@ -320,3 +627,159 @@ button.checkout-btn{
     }
 
 }
+
+/* *****************  Cart style  ******************* */
+button.checkout-btn{
+    background-color:green;
+   border: green;
+}
+.pagination button.qty-icons i{
+    color: #ff5a00;
+}
+.pagination input.input-qty {
+    color:black;
+}
+
+/* ***********************contact us style ********************** */
+.inner-page {
+    box-shadow: 0 0 5px 0 rgb(171 169 171);
+    background: #fff;
+    padding: 0 20px 0 !important;
+    margin-bottom: 20px;
+    position: relative;
+    top: 67px;
+}
+.container
+{
+    margin-right: auto;
+    margin-left: auto;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+b {
+    color: #212121;
+    font-weight: normal !important;
+    font-family: 'open_sanssemibold';
+    font-size: 22px;
+}
+.bold {
+    font-family: 'open_sansbold' !important
+}
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.text-727272 {
+    color: #727272;
+}
+.custom-icons {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+.m-b-lg {
+    margin-bottom: 3rem !important
+}
+.btn-group-justified {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+}
+.btn-group-justified > .btn, .btn-group-justified > .btn-group {
+    float: none;
+    display: table-cell;
+    width: 1%;
+}
+.btn-group-justified > .btn-group .btn {
+    width: 100%;
+}
+.btn-group > .btn:first-child {
+    margin-left: 0
+}
+.btn-group-justified > .btn-group .btn:hover
+{
+    border-bottom: 2px solid #ff5a00;
+}
+.most-tab-group button.active, .most-tab-group button:hover {
+    border-bottom: 2px solid #ff5a00;
+}
+.btn-group > .btn, .btn-group-vertical > .btn {
+    position: relative;
+    float: left;
+}
+.most-tab-group button {
+    background: none;
+    padding: 5px;
+    border: none;
+}
+textarea:hover, input:hover, textarea:active, input:active, textarea:focus, input:focus, button:focus, button:active, button:hover {
+    outline: 0 !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+.b-radius-0 {
+    border-radius: 0;
+}
+.m-b-md {
+    margin-bottom: 1.5rem !important
+}
+.custom_right .custom_txt
+{
+    box-shadow: 0 0 5px 0 rgb(171 169 171);
+    padding: 10px;
+    background-color: rgba(229, 223, 223, 0.901);
+}
+.text-646464 {
+    color: #646464;
+    font-size: 17px;
+}
+.greentext
+{
+    color:#00A53C;
+}
+.green {
+    background-color: #00A53C;
+    color: #fff;
+}
+.contact_footer
+{
+    position: relative;
+    top: 75px;
+}
+/* *************** end contact style **************** */
+
+.custom_home .custom_category > div span img
+{
+    width: 230px;
+    height: 200px;
+}
+
+@media (max-width:575.999px) {
+    .custom_card {
+        width: 80%;
+        margin-left: 50px;
+        margin-top: 10px;
+        margin-bottom:30px ;
+        /* display: inline; */
+    }
+    #span1{
+        margin-top: 10%;
+    }
+    #inp1{
+        width: 80%;
+        padding: 3%;
+            border: 1px;
+            border-radius: 10px;
+    }
+    #search_btn {
+        width: 20%;
+        padding: 3%;
+        border: 1px;
+        border-radius: 10px;
+    }
+}
+
