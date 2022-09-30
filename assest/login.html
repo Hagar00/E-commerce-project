@@ -4,55 +4,76 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>final project</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href=".css/all.min.css">
-    <link rel="stylesheet" href=".css/fontawesome.min.css">
-    <link rel="stylesheet" href=".css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/jQuery-P.js">
+    <link rel="stylesheet" href="js/jquery-ui.min.js">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <!-- ################## start navbar ########### -->
-      <section class="nav_sec fixed-top">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html"><img src="./images/logo.svg" alt="sorry not found"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item ml-4 custom_li">
-                    <a class="nav-link active" aria-current="page" href="./All_resturants.html">All restaurants</a>
+    <!--###################### start navbar ################3 -->
+    <div class="container-fluint fixed-top custom_nav">
+      <nav class="navbar navbar-expand-md navbar-light ">
+          <a href="../index.html" class="navbar-brand ms-5" >
+              <img src="images/logo.svg" alt="logo not found">
+          </a>
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle ="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="background-color:#FF9459"
+          >
+          <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse custom_ul_nav" id="navbarNav">
+              <ul class="navbar-nav  ms-auto me-5">
+                  <li>
+                      <a href="../index.html" class="nav-link custom_li">home</a>
                   </li>
-                  <li class="nav-item ml-4 custom_li">
-                    <a class="nav-link" href="./about.html">about us</a>
+                  <li id="lione">
+                      <a class="nav-link custom_li" href="../All_resturants.html">Services</a>
+                      <div id="divone">
+                          <!-- <div id="myBtnContainer"> -->
+                          <a href="#" id="Restaurants">Restaurants</a>
+                          <a href="#" id="Bakeries">Bakeries</a>
+                          <a href="#" id="Markets">Markets</a>
+                          <!-- </div> -->
+                      </div>
                   </li>
-                  <li class="nav-item ml-4 custom_li">
-                    <a class="nav-link" href="./contact.html">contact us </a>
+                  <li>
+                      <a href="about.html" class="nav-link custom_li">About</a>
                   </li>
-                  <li class="nav-item ml-4 custom_li login ">
-                    <a class="nav-link" href="./login.html"> Log in </a>
+                  <li>
+                      <a href="contact.html" class="nav-link custom_li">Contact Us</a>
                   </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </section>
-      <!-- ##################end navbar ######################## -->
+                  <li>
+                      <a href="login.html" class="nav-link custom_li login">log in</a>
+                  </li>
+              </ul>
+          </div>
+
+      </nav>
+  </div>
+<!--##############################  end navbar ####################### -->
 
       <!--?????????????? but your html code of body here ????????????????? -->
       <section class="register_sec">
         <div class="layout-container mt-5">
           <div class="register-container">
             <h1 class="text-center my-5 fs-3 fw-bold">Welcome To Talabat</h1>
-            <form action="">
-
+          
+            <form id="loginForm" name="loginData" method="POST">
               <div class="row mb-3">
                 <label class="control-label col-sm-2 pt-3">Email</label>
                 <div class="col-sm-8">
-                  <input type="text" class="form-control" name="username" autocomplete="username">
+                  <input type="text"  id="email" class="form-control" name="email" autocomplete="username">
                   <p class="error f-14 mt-1"></p>
                 </div>
               </div>
@@ -61,14 +82,14 @@
                 <label class="control-label col-sm-2 pt-3">Password</label>
                 <div class="col-sm-8 password">
                   <div class="form-control">
-                    <input type="password" autocomplete="current-password" name="password">
+                    <input type="password" id="password" autocomplete="current-password" name="password">
                     <span class="f-12 clickable bg-white pl-1">show</span>
                   </div>
                   <p class="error f-14 mt-1"></p>
                 </div>
               </div>
               <div class="row justify-content-center">
-                <button class="primary-button login-btn fw-bolder" type="submit">Login</button>
+                <button id="loginBtn" class="primary-button login-btn fw-bolder" type="submit">Login</button>
               </div>
             </form>
             <p class="py-4 text-center">
@@ -83,64 +104,64 @@
       <!--????????????????????????/ end ?????????????????????? -->
 
       <!--################## start footer ########################### -->
-      <footer class="footer purple-bg ng-scope" ng-controller="FooterController">
-            <section class="footercontent container p-x-0">
-        <div class="home-footer">
-            <section class="popular-links hidden-xs">
-                <div class="row">
-                    <div class="col-sm-4 hidden-xs">
-                        <p>Restaurants</p>
-                                <a href="/egypt/taboon-zamalek">Taboon</a>
-                                <a href="/egypt/dawar-farah-mohandiseen">Dawar Farah - Mohandiseen</a>
-                                <a href="/egypt/planet-africa-city-stars">Planet Africa</a>
-                                <a href="/egypt/al-aseel-el-demashky-tagamoa-5">Al Aseel El Demashky</a>
-                                <a href="/egypt/lan-yuan-maadi">Lan Yuan - Maadi</a>
-                        <a href="/egypt/restaurants" ng-attr-target="{{enableAllRestDL? '_self' : null}}" class="p-t-md" target="_self"><i>More Restaurants...</i></a>
-                    </div>
-                    <div class="col-sm-4 hidden-xs">
-                        <p>Popular Cuisines</p>
-                                <a href="/egypt/italian/588/restaurants" target="_self">Italian</a>
-                                <a href="/egypt/mexican/589/restaurants" target="_self">Mexican </a>
-                                <a href="/egypt/sandwiches/590/restaurants" target="_self">Sandwiches</a>
-                                <a href="/egypt/japanese/591/restaurants" target="_self">Japanese </a>
-                                <a href="/egypt/pizza/592/restaurants" target="_self">Pizza</a>
-                        <a href="/egypt/sitemap" target="_self" class="p-t-md"><i>More Cuisines...</i></a>
-                    </div>
-                    
-                    <div class="col-sm-4 p-l-0 followDiv">
-                      <p>Follow us on</p>
-                        <div class="row follow-i custom_icons">
-                            <a href="http://www.facebook.com/Talabat"><i class="fa fa-facebook fa-3x"></i></a>
-                            <a href="http://twitter.com/Talabat"><i class="fa fa-twitter fa-3x"></i></a>
-                            <a href="http://instagram.com/Talabat"><i class="fa fa-instagram fa-3x"></i></a>
-                            <a href="https://www.linkedin.com/company/3604171"><i class="fa fa-linkedin fa-3x"></i></a>
-                            <a href="http://www.youtube.com/TalabatGTC"><i class="fa fa-youtube-play fa-3x"></i></a>
-                            <span class="stretch"></span>
-                          
+      <div class="footer">
+        <div class="container">
+            <div class="row details_footer">
+                <div class="one col-lg-4 col-md-12 col-sm-12">
+                    <p>Restaurants</p>
+                                <a href="/egypt/taboon-zamalek" class="custom_a d-block">Taboon</a>
+                                <a href="/egypt/dawar-farah-mohandiseen" class="custom_a d-block">Dawar Farah - Mohandiseen</a>
+                                <a href="/egypt/planet-africa-city-stars" class="custom_a d-block" >Planet Africa</a>
+                                <a href="/egypt/al-aseel-el-demashky-tagamoa-5" class="custom_a d-block">Al Aseel El Demashky</a>
+                                <a href="/egypt/lan-yuan-maadi" class="custom_a d-block">Lan Yuan - Maadi</a>
+                </div>
+                <div class="two col-lg-4 col-md-12 col-sm-12" >
+                    <p>Popular Cuisines</p>
+                                <a href="/egypt/italian/588/restaurants" class="custom_a d-block" target="_self">Italian</a>
+                                <a href="/egypt/mexican/589/restaurants" class="custom_a d-block"  target="_self">Mexican </a>
+                                <a href="/egypt/sandwiches/590/restaurants" class="custom_a d-block" target="_self">Sandwiches</a>
+                                <a href="/egypt/japanese/591/restaurants" class="custom_a d-block" target="_self">Japanese </a>
+                                <a href="/egypt/pizza/592/restaurants" class="custom_a d-block" target="_self">Pizza</a>
+                                
+                </div>
+                <div class="three col-lg-4 col-md-12 col-sm-12">
+                    <p>&nbsp;&nbsp; Follow us on</p>
+                    <div class="row follow_icon">
+                        <div class="IconOne col-lg-2 col-md-2 col-sm-2">
+                            <a href="http://www.facebook.com/Talabat" class="custom_a"><i class="fa fa-facebook fa-3x"></i></a>
+                        </div >
+                        <div class="IconTwo col-lg-2 col-md-2 col-sm-2">
+                            <a href="http://twitter.com/Talabat" class="custom_a"><i class="fa fa-twitter fa-3x"></i></a>
+                        </div >
+                        <div class="IconThree col-lg-2 col-md-2 col-sm-2">
+                            <a href="http://instagram.com/Talabat" class="custom_a"><i class="fa fa-instagram fa-3x"></i></a>
                         </div>
-
+                        <div class="IconFour col-lg-3 col-md-3 col-sm-2">
+                            <a href="https://www.linkedin.com/company/3604171" class="custom_a"><i class="fa fa-linkedin fa-3x"></i></a>
+                        </div>
+                        <div class="IconFour col-lg-2 col-md-2 col-sm-2">
+                            <a href="http://www.youtube.com/TalabatGTC" class="custom_a"><i class="fa fa-youtube-play fa-3x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="fix-text p-y-lg mt-4">
+                <div class="row">
+                    <div class="col-xs-16 col-sm-13">
+                        <span>
+                            For any support or help you can contact us via our Live Chat
+                        </span>
+                    </div>
+                    <div class="col-xs-16 col-sm-3 text-right">
+                        ©2022 <span>Talabat.com</span>
                     </div>
                 </div>
             </section>
         </div>
-        <section class="fix-text p-y-lg">
-            <div class="row">
-                <div class="col-xs-16 col-sm-13">
-                    <span>
-                        For any support or help you can contact us via our Live Chat
-                    </span>
-                </div>
-                <div class="col-xs-16 col-sm-3 text-right">
-                    ©2022 <span>Talabat.com</span>
-                </div>
-            </div>
-        </section>
-            </section>
-      </footer>
+    </div>
       <!-- ################end footer ###################### -->
-    <script src="https://kit.fontawesome.com/8321aaa57d.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/8321aaa57d.js" crossorigin="anonymous"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/regester.js"></script>
   </body>
 </html>
