@@ -252,6 +252,27 @@ button[type="search"] {
     text-align: -webkit-center;
 }
 
+/* *****************  Cart style  ******************* */
+button.checkout-btn{
+   background-color:green;
+   border: green;
+   padding: 1em;
+   font-size: smaller;
+   height: 3.5em;
+}
+.pagination button.qty-icons i{
+    color: #ff5a00;
+}
+.pagination input.input-qty {
+    color:black;
+}
+.item_no{
+    font-size: 20px;
+    color: #ff5a00;
+    font-weight: bold;
+   
+}
+
 @media (max-width:575.999px) {
     .card {
         width: 80%;
