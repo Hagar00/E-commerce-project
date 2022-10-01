@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Talabat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assest/css/all.min.css">
+    <link rel="stylesheet" href="./assest/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./assest/css/normalize.css">
+    <link rel="stylesheet" href="./assest/css/style1.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./assest/js/jQuery-P.js"></script>
+    <script src="./assest/js/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <!-- ################## start navbar ########### -->
+    <div class="container-fluint fixed-top custom_nav">
+        <nav class="navbar navbar-expand-md navbar-light ">
+            <a href="./index.html" class="navbar-brand ms-5">
+                <img src="./assest/images/logo.svg" alt="logo not found">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                style="background-color:#FF9459">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse custom_ul_nav" id="navbarNav">
+                <ul class="navbar-nav  ms-auto me-5">
+                    <li>
+                        <a href="./index.html" class="nav-link custom_li">home</a>
+                    </li>
+                            <li class="nav-item ml-4 custom_li" id="lione">
+                                <a class="nav-link active" aria-current="page" href="./All_resturants.html">Services</a>
+                                <div id="divone">
+                                    <!-- <div id="myBtnContainer"> -->
+                                        <a href="#" id="Restaurants">Restaurants</a>
+                                        <a href="#" id="Bakeries">Bakeries</a>
+                                        <a href="#" id="Markets">Markets</a>
+                                    <!-- </div> -->
+                                </div>
+                            </li>
+                            <li>
+                                <a href="./assest/about.html" class="nav-link custom_li">About</a>
+                            </li>
+                            <li>
+                                <a href="./assest/contact.html" class="nav-link custom_li"> Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="./assest/login.html" class="nav-link custom_li login">log in </a>
+                            </li>
+                            <li class="nav-item ml-4 custom_li">
+                              <a  class="nav-link" href="./cart.html"> <span class="fa fa-shopping-cart" id="cart_icon" style="color:azure"></span> <span style="color:azure" class="cart-counter"> 0</span></a>
+                          </li> 
+                            </ul>
+                            </div>
+                            </nav>
+                            </div>
+    <!-- ##################end navbar ######################## -->
+
+<div>
+  <h2 class="py-4 font-weight-bold" id="cart-itemNo" style="margin-top: 3em; margin-left: 10em;">Cart ( <span id="cartCounterNo"></span> items)</h2>
+</div>
+<!--?????????????? Cart section ????????????????? -->
+<section class="home_sec" >
+<div class="container-fluid " id="hideContainer">
+    <div class="row">
+      <div class="col-md-10 col-11 mx-auto">
+        <div class="row mt-5 gx-3">
+          <!-- left side div -->
+          <div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow" id="cart-items">
+          
+          <!-- 2nd card -->
+       
+        <!-- <div  class="card p-4" >
+          
+        
+      </div>   -->
+    </div>
+    <!-- right side div -->
+    <div  class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
+      <div class="right_side p-3 shadow bg-white">
+        <h2 class="product_name mb-5">The Total Amount Of</h2>
+        <div class="price_indiv d-flex justify-content-between">
+          <p>Subtotal</p>
+          <p>EGP<span id="product_subtotal_amt"> </span></p>
+          </div>
+          <div class="price_indiv d-flex justify-content-between">
+            <p>Delivery fee</p>
+            <p id="delivery">EGP 20</p>
+          </div>
+          
+          </div>
+          <hr />
+          <div class="price_indiv d-flex justify-content-between">
+            <p>Total Amount</p>
+            <span id="total_amount"></span>
+            
+            
+              
+          <button class="btn btn-primary text-uppercase checkout-btn orderSuccess " onclick="confirmOrder()"
+          style ="background-color:green;
+          border:non;
+          padding:1rem;
+          height: 3.5em;
+          "> Proceed to Checkout</button>
+      
+      </div>
+    </div>
+
+      </div>
+    </div>
+</div>
+</div>
+
+<div class="container-fluid  mt-100" id="emptycart">
+
+</div>
+</section>
+
+    <!--################## start footer ########################### -->
+    <div class="footer">
+      <div class="container">
+          <div class="row details_footer">
+              <div class="one col-lg-4 col-md-12 col-sm-12">
+                  <p>Restaurants</p>
+                  <a href="/egypt/taboon-zamalek" class="custom_a d-block">Taboon</a>
+                  <a href="/egypt/dawar-farah-mohandiseen" class="custom_a d-block">Dawar Farah - Mohandiseen</a>
+                  <a href="/egypt/planet-africa-city-stars" class="custom_a d-block">Planet Africa</a>
+                  <a href="/egypt/al-aseel-el-demashky-tagamoa-5" class="custom_a d-block">Al Aseel El Demashky</a>
+                  <a href="/egypt/lan-yuan-maadi" class="custom_a d-block">Lan Yuan - Maadi</a>
+              </div>
+              <div class="two col-lg-4 col-md-12 col-sm-12">
+                  <p>Popular Cuisines</p>
+                  <a href="/egypt/italian/588/restaurants" class="custom_a d-block" target="_self">Italian</a>
+                  <a href="/egypt/mexican/589/restaurants" class="custom_a d-block" target="_self">Mexican </a>
+                  <a href="/egypt/sandwiches/590/restaurants" class="custom_a d-block" target="_self">Sandwiches</a>
+                  <a href="/egypt/japanese/591/restaurants" class="custom_a d-block" target="_self">Japanese </a>
+                  <a href="/egypt/pizza/592/restaurants" class="custom_a d-block" target="_self">Pizza</a>
+  
+              </div>
+              <div class="three col-lg-4 col-md-12 col-sm-12">
+                  <p>&nbsp;&nbsp; Follow us on</p>
+                  <div class="row follow_icon">
+                      <div class="IconOne col-lg-2 col-md-2 col-sm-2">
+                          <a href="http://www.facebook.com/Talabat" class="custom_a"><i
+                                  class="fa fa-facebook fa-3x"></i></a>
+                      </div>
+                      <div class="IconTwo col-lg-2 col-md-2 col-sm-2">
+                          <a href="http://twitter.com/Talabat" class="custom_a"><i class="fa fa-twitter fa-3x"></i></a>
+                      </div>
+                      <div class="IconThree col-lg-2 col-md-2 col-sm-2">
+                          <a href="http://instagram.com/Talabat" class="custom_a"><i
+                                  class="fa fa-instagram fa-3x"></i></a>
+                      </div>
+                      <div class="IconFour col-lg-3 col-md-3 col-sm-2">
+                          <a href="https://www.linkedin.com/company/3604171" class="custom_a"><i
+                                  class="fa fa-linkedin fa-3x"></i></a>
+                      </div>
+                      <div class="IconFour col-lg-2 col-md-2 col-sm-2">
+                          <a href="http://www.youtube.com/TalabatGTC" class="custom_a"><i
+                                  class="fa fa-youtube-play fa-3x"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <section class="fix-text p-y-lg mt-4">
+              <div class="row">
+                  <div class="col-xs-16 col-sm-13">
+                      <span>
+                          For any support or help you can contact us via our Live Chat
+                      </span>
+                  </div>
+                  <div class="col-xs-16 col-sm-3 text-right">
+                      ©2022 <span>Talabat.com</span>
+                  </div>
+              </div>
+          </section>
+      </div>
+  </div>
+  <!-- ################end footer ###################### -->
+</body>
+  <script src="https://kit.fontawesome.com/8321aaa57d.js" crossorigin="anonymous"></script>
+  <script src="./assest/js/bootstrap.min.js"></script>
+ <script src="./assest/js/cart_function.js"></script>
+  <script src="./assest/js/main.js"></script>
+  <script src="https://kit.fontawesome.com/8321aaa57d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  
+</html>
+

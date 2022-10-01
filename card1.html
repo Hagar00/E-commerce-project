@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Talabat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assest/css/all.min.css">
+    <link rel="stylesheet" href="./assest/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./assest/css/normalize.css">
+    <link rel="stylesheet" href="./assest/css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./assest/js/jQuery-P.js"></script>
+    <script src="./assest/js/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <!-- ################## start navbar ########### -->
+    <div class="container-fluint fixed-top custom_nav">
+        <nav class="navbar navbar-expand-md navbar-light ">
+            <a href="#" class="navbar-brand ms-5">
+                <img src="./assest/images/logo.svg" alt="logo not found">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                style="background-color:#FF9459">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse custom_ul_nav" id="navbarNav">
+                <ul class="navbar-nav  ms-auto me-5">
+                    <li>
+                        <a href="./index.html" class="nav-link custom_li">home</a>
+                    </li>
+                            <li class="nav-item ml-4 custom_li" id="lione">
+                                <a class="nav-link active" aria-current="page" href="./All_restursnts">Services</a>
+                                <div id="divone">
+                                    <a href="#">Restaurants</a>
+                                    <a href="#">Bakeries</a>
+                                    <a href="#">Markets</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="./assest/about.html" class="nav-link custom_li">About</a>
+                            </li>
+                            <li>
+                                <a href="./assest/contact.html" class="nav-link custom_li"> Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="./assest/login.html" class="nav-link custom_li login">log in </a>
+                            </li>
+                            <li class="nav-item ml-4 custom_li">
+                                <a  class="nav-link" href="./cart.html"> <span class="fa fa-shopping-cart" id="cart_icon" style="color:azure"></span> <span style="color:azure" class="cart-counter"> 0</span></a>
+                            </li> 
+                            </ul>
+                            </div>
+                            </nav>
+                            </div>
+    <!-- ##################end navbar ######################## -->
+
+    <!--?????????????? but your html code of body here ????????????????? -->
+    <section class="home_sec">
+        <div class="container" style="margin-top: 5%; background-color: rgb(248, 247, 244); box-shadow: 1px 1px 5px ;">
+            <!-- <div class="row row-cols-1 row-cols-md-2 g-4"> -->
+            <br><br>
+            <div style="display:flex;font-family:'Times New Roman', Times, serif;font-size: medium;">
+                <div style="padding-top: 10px;">
+                    <img src="./assest/images/Groovy.png" alt="img" width="140px" height="120px" style="border: 1px solid; ">
+                </div>
+                <div style="padding-left: 20px; width: 970px;">
+                    <p >
+                        <span style="font-size:x-large ;">Groovy</span> 
+                        <span style="float: right; color: rgb(38, 158, 38);">OPEN</span>
+                    </p>
+                    <p>in El Magzar, Egypt</p>
+                    <p>
+                        <span>Fast Food, Sandwiches, Burgers</span> 
+                        <span style="float: right;" >
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                        </span>   
+                    </p>
+                    <p>
+                        <span style="font-size: 15px;"> Min. order: EGP 15.00 </span>
+                        <span style="float: right;">
+                        <img src="./assest/images/visa.png" alt="visa" width="40px" height="30px">
+                        <img src="./assest/images/mastercard.png" alt="mastercard" width="40px" height="30px">
+                        <img src="./assest/images/cash.png" alt="cash" width="40px" height="30px">
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <span id="span1" style="background-color:rgb(238, 231, 229)">&#9432; Delivered by us, with live tracking</span>
+            </div>
+            <br>
+            <div class="row">
+                <span id="span1" style="font-size:large; color:black;"><img src="./assest/images/menu-ico.svg" height="30px" alt="menu">&nbsp; Menu</span>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col col-lg-2">
+                    <div class="category1" style="padding-left: 10px; position: relative;" >
+                        <div class="row">
+                            <label style="float: left; font-weight: bold;font-size: 15px; padding: 2%;">Categories</label>
+                        </div>
+                        <div class="row">
+                            <a href="#Most_Selling" class="spans">Most Selling</a>
+                        </div>
+                        <div class="row">
+                            <a href="#Combo_Meals" class="spans">Combo Meals</a>
+                        </div>
+                        <div class="row">
+                            <a href="#Value_Meals" class="spans">Value Meals</a>
+                        </div>
+                        <div class="row">
+                            <a href="#Groovy_Offers" class="spans">Groovy Offers</a>
+                        </div>
+                        <div class="row">
+                            <a href="#Beef_Burger_Sandwiches" class="spans">Beef Burger Sandwiches</a>
+                        </div>
+                        <div class="row">
+                            <a href="#Chicken_Burgers" class="spans">Chicken Burgers</a>
+                        </div>
+                        <div class="row">
+                            <a href="#Hot_Dog" class="spans">Hot Dog</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-sm-12 col-lg-6">
+                    <div class="category2" style="padding-left: 10px;">
+                        <button type="search" style="width: 20%; padding: 23px; border-radius: unset; margin:5px;"><i class="fa fa-search icon"></i></button>
+                        <input id="inp2" type="search" placeholder="Search Menu Item">
+                        <br><br>
+                        <div class="row">
+                            <span id="Most_Selling" style="background-color:rgb(238, 231, 229)">Most Selling</span>
+                        </div>
+                        <br>
+                        <div class="container" id="categ1">
+                        </div>
+                        <div class="row">
+                            <span id="Combo_Meals" style="background-color:rgb(238, 231, 229)">Combo Meals</span>
+                        </div>
+                        <br>
+                        <div class="container" id="categ2">
+                        </div>
+                        <div class="row">
+                            <span id="Value_Meals" style="background-color:rgb(238, 231, 229)">Value Meals</span>
+                        </div>
+                        <br>
+                        <div class="container" id="categ3">
+                        </div>
+                        <div class="row">
+                            <span id="Groovy_Offers" style="background-color:rgb(238, 231, 229)">Groovy Offers</span>
+                        </div>
+                        <br>
+                        <div class="container" id="categ4">
+                        </div>
+                        <div class="row">
+                            <span id="Beef_Burger_Sandwiches" style="background-color:rgb(238, 231, 229)">Beef Burger Sandwiches</span>
+                        </div>
+                        <br>
+                        <div class="container" id="categ5">
+                        </div>
+                        <div class="row">
+                            <span id="Chicken_Burgers" style="background-color:rgb(238, 231, 229)">Chicken Burgers</span>
+                        </div>
+                        <br>
+                        <div class="container" id="categ6">
+                           
+                        </div>
+                        <div class="row">
+                            <span id="Hot_Dog" style="background-color:rgb(238, 231, 229)">Hot Dog</span>
+                        </div>
+                        <br>
+                        <div class="container" id="categ7">
+                           
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="col col-sm-12 col-lg-4" >
+                    <div class="category3" style="padding-left: 10px; padding-right: 10px; position:relative ;">
+                        <div class="row">
+                            <label style="float: left; font-weight: bold;font-size: 20px; padding: 2%; background-color: orangered;color: aliceblue;">Your Cart</label>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <p><span style="font-weight:bold;font-size:medium;">Groovy </span>- El Magzar, Egypt</p>
+                        </div>
+                        <div class="row" style="border: opecity 0.5;">
+                        </div>
+                        <div class="row">
+                            <p>
+                                <span style="font-size:medium; opacity: 0.7;">Subtotal </span>
+                                <span style="float:right; opacity: 0.7;">EGP 49.00</span>
+                            </p>
+                        </div>
+                        <div class="row">
+                            <p>
+                                <span style="font-size:medium;">Delivery fee </span>
+                                <span style="float:right;">EGP 4.99</span>
+                            </p>
+                        </div>
+                        <div class="row">
+                            <p>
+                                <span style="font-weight:bold;font-size:medium;">Total Amount </span>
+                                <span style="float:right;">EGP 53.99</span>
+                            </p>
+                        </div>
+                        <div class="row">
+                            <a href="#">
+                            <input id="proceedcheckout" type="button" value=" GO CHECKOUT CART">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--????????????????????????/ end ?????????????????????? -->
+
+    <!--################## start footer ########################### -->
+    <div class="footer">
+        <div class="container">
+            <div class="row details_footer">
+                <div class="one col-lg-4 col-md-12 col-sm-12">
+                    <p>Restaurants</p>
+                    <a href="/egypt/taboon-zamalek" class="custom_a d-block">Taboon</a>
+                    <a href="/egypt/dawar-farah-mohandiseen" class="custom_a d-block">Dawar Farah - Mohandiseen</a>
+                    <a href="/egypt/planet-africa-city-stars" class="custom_a d-block">Planet Africa</a>
+                    <a href="/egypt/al-aseel-el-demashky-tagamoa-5" class="custom_a d-block">Al Aseel El Demashky</a>
+                    <a href="/egypt/lan-yuan-maadi" class="custom_a d-block">Lan Yuan - Maadi</a>
+                </div>
+                <div class="two col-lg-4 col-md-12 col-sm-12">
+                    <p>Popular Cuisines</p>
+                    <a href="/egypt/italian/588/restaurants" class="custom_a d-block" target="_self">Italian</a>
+                    <a href="/egypt/mexican/589/restaurants" class="custom_a d-block" target="_self">Mexican </a>
+                    <a href="/egypt/sandwiches/590/restaurants" class="custom_a d-block" target="_self">Sandwiches</a>
+                    <a href="/egypt/japanese/591/restaurants" class="custom_a d-block" target="_self">Japanese </a>
+                    <a href="/egypt/pizza/592/restaurants" class="custom_a d-block" target="_self">Pizza</a>
+    
+                </div>
+                <div class="three col-lg-4 col-md-12 col-sm-12">
+                    <p>&nbsp;&nbsp; Follow us on</p>
+                    <div class="row follow_icon">
+                        <div class="IconOne col-lg-2 col-md-2 col-sm-2">
+                            <a href="http://www.facebook.com/Talabat" class="custom_a"><i
+                                    class="fa fa-facebook fa-3x"></i></a>
+                        </div>
+                        <div class="IconTwo col-lg-2 col-md-2 col-sm-2">
+                            <a href="http://twitter.com/Talabat" class="custom_a"><i class="fa fa-twitter fa-3x"></i></a>
+                        </div>
+                        <div class="IconThree col-lg-2 col-md-2 col-sm-2">
+                            <a href="http://instagram.com/Talabat" class="custom_a"><i
+                                    class="fa fa-instagram fa-3x"></i></a>
+                        </div>
+                        <div class="IconFour col-lg-3 col-md-3 col-sm-2">
+                            <a href="https://www.linkedin.com/company/3604171" class="custom_a"><i
+                                    class="fa fa-linkedin fa-3x"></i></a>
+                        </div>
+                        <div class="IconFour col-lg-2 col-md-2 col-sm-2">
+                            <a href="http://www.youtube.com/TalabatGTC" class="custom_a"><i
+                                    class="fa fa-youtube-play fa-3x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="fix-text p-y-lg mt-4">
+                <div class="row">
+                    <div class="col-xs-16 col-sm-13">
+                        <span>
+                            For any support or help you can contact us via our Live Chat
+                        </span>
+                    </div>
+                    <div class="col-xs-16 col-sm-3 text-right">
+                        ©2022 <span>Talabat.com</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- ################end footer ###################### -->
+    <script src="https://kit.fontawesome.com/8321aaa57d.js" crossorigin="anonymous"></script>
+    <script src="./assest/js/bootstrap.min.js"></script>
+    <script src="./assest/js/products.js"></script>
+    <script>
+                // Jquery of Restaurants Cards Show and Hide
+        $("#Most_Selling").on('click', function () {
+        $('#categ1').slideToggle(1000);
+        });
+
+        $("#Combo_Meals").on('click', function () {
+        $('#categ2').slideToggle(1000);
+        });
+
+        $("#Value_Meals").on('click', function () {
+        $('#categ3').slideToggle(1000);
+        });
+
+        $("#Groovy_Offers").on('click', function () {
+        $('#categ4').slideToggle(1000);
+        });
+
+        $("#Beef_Burger_Sandwiches").on('click', function () {
+        $('#categ5').slideToggle(1000);
+        });
+
+        $("#Chicken_Burgers").on('click', function () {
+        $('#categ6').slideToggle(1000);
+        });
+
+        $("#Hot_Dog").on('click', function () {
+        $('#categ7').slideToggle(1000);
+        });
+        // filtering selection functions
+        // select elements 
+        const productElem = document.getElementById("categ1");
+        function renderProducts (){
+        products.forEach( (product)=>{
+        
+            productElem.innerHTML += `
+            <div class="row">
+                <div class="card mb-3" style=" border: 1px solid;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                        <img src="${product.imgSrc}" class="img-fluid rounded-start" alt="${product.fname}"
+                            style="width:200px; height: 98px;">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                <span>${product.fname}</span>
+                                <span style="float:right; color:red ; ">${product.price} EGP</span>
+                                </h5>
+                                <p class="card-text">
+                                    ${product.description}
+                                </p>
+                                <button class="btn btn-success" onclick ="cartNumbers(${product.id}) ,totalcost(${product.id})" >Add To Cart</button>
+                            </div>
+                </div>
+            </div>  
+            `
+            })
+            }
+            renderProducts();
+
+        </script>
+        <script src="./assest/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/jQuery-P.js">
+    <link rel="stylesheet" href="js/jquery-ui.min.js">
+    <link rel="stylesheet" href="css/style.css">
+    <title>contact us </title>
+</head>
+<body>
+    <!-- ################## start navbar ########### -->
+    <div class="container-fluint fixed-top custom_nav">
+        <nav class="navbar navbar-expand-md navbar-light ">
+            <a href="../index.html" class="navbar-brand ms-5" >
+                <img src="images/logo.svg" alt="logo not found">
+            </a>
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle ="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="background-color:#FF9459"
+            >
+            <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse custom_ul_nav" id="navbarNav">
+                <ul class="navbar-nav  ms-auto me-5">
+                    <li>
+                        <a href="../index.html" class="nav-link custom_li">home</a>
+                    </li>
+                    <li id="lione">
+                        <a class="nav-link custom_li" href="../All_resturants.html">Services</a>
+                        <div id="divone">
+                            <!-- <div id="myBtnContainer"> -->
+                            <a href="#" id="Restaurants">Restaurants</a>
+                            <a href="#" id="Bakeries">Bakeries</a>
+                            <a href="#" id="Markets">Markets</a>
+                            <!-- </div> -->
+                        </div>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-link custom_li">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-link custom_li">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="login.html" class="nav-link custom_li login">log in</a>
+                    </li>
+                </ul>
+            </div>
+  
+        </nav>
+    </div>
+    <!-- ##################end navbar ######################## -->
+    <!--############## start contact section ################# -->
+    <section class="container inner-page">
+        <div class="row isapp">
+            <div class="col-xs-16">
+                <h1 class="h2 m-a-0 f-20-m p-y-md b-b"><b>Contact Us</b></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-16 col-sm-12">
+                <h3 class="f-17 bold">How may we help you?</h3>
+                <b class="text-727272">Our agents are available 24x7 to make sure that all your issues and inquiries are resolved.</b>
+                <section class="m-y-md mt-5">
+                    <div class="btn-group btn-group-justified most-tab-group m-b-lg m-b-md-m" role="group">
+                        <div class="btn-group" role="group">
+                            <button class="btn b-b customerBtn active b-radius-0" onclick="changeSection('customer')">
+                                <p class="h4 f-15-m">
+                                    <span class="p-r">
+                                        <img src="./images/icon-customer.webp" alt="Customer" height="25" />
+                                    </span>
+                                    <span class="text-left">Need Help?</span>
+                                </p>
+                            </button>
+                        </div>
+                         <div class="btn-group" role="group">
+                                <button class="btn b-b restBtn b-radius-0" onclick="changeSection('restaurant')">
+                                    <p class="h4 f-15-m">
+                                        <span class="p-r">
+                                            <img src="./images/icon_join.webp" alt="restaurant" height="25" />
+                                        </span>
+                                        <span class="text-left">Join Us</span>
+                                    </p>
+                                </button>
+                         </div>
+                    </div>
+                </section>
+                <section class="customer-section m-b-md">
+                    <div class="row">  
+                        <div class="col-xs-12 col-sm-6 col-sm-pull-2 col-md-8">
+                            <div id="contactus-success" class="light-grey-bg text-center p-a-md" style="display: none;">
+                                <img src="/images/Talabat/greenCheck.png" width="40" />
+                                <p class="h4 m-a-md"><b>Thank you for contacting us</b></p>
+                                <p class="h5 p-a-0">We value every feedback we receive</p>
+                            </div>
+                            <div id="contactus">
+                                <p class="f-17"><b>Write to us</b></p>
+                                <p  id="liveagent_button_online_contactUs_5731r000000btk9"><b class="f-14 text-727272">You may start a <a href="#" onClick="window.open('/egypt/livechat', '_blank', 'toolbar=yes,scrollbars=yes,resizable=yes,top=50,left=50,width=450,height=500'); return false;" class="orange green-text">Live Chat</a> with one of our agents for any queries.</b></p>
+                                <p class="m-b-md"><b class="f-14 text-727272">Or you can fill the below contact form and we make sure to get back to you as soon as possible.</b></p>
+                                <form id="contactus-form">
+                                    <input type="hidden" id="countryId" name="countryId" value="9" />
+                                    <input type="hidden" id="appbrand" name="appbrand" value="" />
+                                    <div class="form-group font-weight-bold">
+                                        <label for="name">Name <span class="orange">*</span></label>
+                                        <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="mailFrom">Email <span class="orange">*</span></label>
+                                        <input type="email" id="mailFrom" name="mailFrom" class="form-control" placeholder="Email" required>
+                                    </div>
+                                    <div class="form-group  ">
+                                        <label for="mobile">Mobile</label>
+                                        <input type="tel" id="mobile" name="mobile" class="form-control" placeholder="Mobile" required>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label  for="comments ">Comment <span class="orange ">*</span></label>
+                                        <textarea id="comments" name="comments" class="form-control" required></textarea>
+                                    </div>
+                                    <div class="form-group mt-4">
+                                        <button type="submit" class="btn p-x-lg green text-uppercase"> Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-sm-push-10 m-b-md col-md-4 custom_right">
+                            <div class="light-grey-bg p-a custom_txt">
+                                <p class="f-16"><b>Contact us</b></p>
+                                <b class="text-646464">To get the quickest response in case you need to:</b>
+                                <p class="m-t"><i class="fa fa-check greentext p-r f-17"></i><b class="p-3">Modify your order</b></p>
+                                <p><i class="fa fa-check greentext p-r f-17"></i><b class="p-3">General inquiries</b></p>
+                                <p class="text-646464">You may contact us through our live chat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+    <!--############################ end ######################## -->
+    <!-- ###################### start footer ################### -->
+    <div class="footer mt-5">
+        <div class="container">
+            <div class="row details_footer">
+                <div class="one col-lg-4 col-md-12 col-sm-12">
+                    <p>Restaurants</p>
+                                <a href="/egypt/taboon-zamalek" class="custom_a d-block">Taboon</a>
+                                <a href="/egypt/dawar-farah-mohandiseen" class="custom_a d-block">Dawar Farah - Mohandiseen</a>
+                                <a href="/egypt/planet-africa-city-stars" class="custom_a d-block" >Planet Africa</a>
+                                <a href="/egypt/al-aseel-el-demashky-tagamoa-5" class="custom_a d-block">Al Aseel El Demashky</a>
+                                <a href="/egypt/lan-yuan-maadi" class="custom_a d-block">Lan Yuan - Maadi</a>
+                </div>
+                <div class="two col-lg-4 col-md-12 col-sm-12" >
+                    <p>Popular Cuisines</p>
+                                <a href="/egypt/italian/588/restaurants" class="custom_a d-block" target="_self">Italian</a>
+                                <a href="/egypt/mexican/589/restaurants" class="custom_a d-block"  target="_self">Mexican </a>
+                                <a href="/egypt/sandwiches/590/restaurants" class="custom_a d-block" target="_self">Sandwiches</a>
+                                <a href="/egypt/japanese/591/restaurants" class="custom_a d-block" target="_self">Japanese </a>
+                                <a href="/egypt/pizza/592/restaurants" class="custom_a d-block" target="_self">Pizza</a>
+                                
+                </div>
+                <div class="three col-lg-4 col-md-12 col-sm-12">
+                    <p>&nbsp;&nbsp; Follow us on</p>
+                    <div class="row follow_icon">
+                        <div class="IconOne col-lg-2 col-md-2 col-sm-2">
+                            <a href="http://www.facebook.com/Talabat" class="custom_a"><i class="fa fa-facebook fa-3x"></i></a>
+                        </div >
+                        <div class="IconTwo col-lg-2 col-md-2 col-sm-2">
+                            <a href="http://twitter.com/Talabat" class="custom_a"><i class="fa fa-twitter fa-3x"></i></a>
+                        </div >
+                        <div class="IconThree col-lg-2 col-md-2 col-sm-2">
+                            <a href="http://instagram.com/Talabat" class="custom_a"><i class="fa fa-instagram fa-3x"></i></a>
+                        </div>
+                        <div class="IconFour col-lg-3 col-md-3 col-sm-2">
+                            <a href="https://www.linkedin.com/company/3604171" class="custom_a"><i class="fa fa-linkedin fa-3x"></i></a>
+                        </div>
+                        <div class="IconFour col-lg-2 col-md-2 col-sm-2">
+                            <a href="http://www.youtube.com/TalabatGTC" class="custom_a"><i class="fa fa-youtube-play fa-3x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="fix-text p-y-lg mt-4">
+                <div class="row">
+                    <div class="col-xs-16 col-sm-13">
+                        <span>
+                            For any support or help you can contact us via our Live Chat
+                        </span>
+                    </div>
+                    <div class="col-xs-16 col-sm-3 text-right">
+                        ©2022 <span>Talabat.com</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- #################### end footer ################### -->
+
+    <script src="https://kit.fontawesome.com/8321aaa57d.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
